@@ -1,11 +1,7 @@
 # angular-exam-project
 Angular Project
 
-### TO DO ###
-
-### ALL REQUIREMENTS ###
-
-# Requirements:
+# Main Requirements:
 * Backend service - Firebase;
 * At least 3 different dynamic pages (pages like about, contacts, login, register do not count towards that figure). If your project doesn’t cover this condition you will not be graded.
 * Use Angular for the client-side
@@ -16,7 +12,7 @@ Angular Project
 * Brief documentation on the project and project architecture (as .md file)
 * Good usability. Good UI and UX. (NGBootstrap, MDL, CSS Grids or another method of your choice)
 
-# Bonuses:
+# Bonus Requirements:
 * Deploy the application in a cloud environment
 * Use a file storage cloud API, e.g. Dropbox, Google Drive or other for storing the files.
 * Use of features of HTML 5 like Geolocation, SVG, Canvas, etc.
@@ -25,12 +21,12 @@ Angular Project
 * Use RxJS powered state management for Angular applications, inspired by Redux (ngRx store)
 * Anything that is not described in the assignment is a bonus if it has some practical use.
 
-### APPLICATION ###
+# Applicaton
 
-# Application Type
+## Application Type
 Bidding system for products
 
-## Public Part Pages
+## Public Pages
 * Home -> Product Page
     - top 3 offers - based on number of bids
 
@@ -43,7 +39,7 @@ Bidding system for products
     - password
     - repeat password
 
-## Private Part / User Area Pages
+## Private Pages
 
 * All Bids - Dynamic Page #1 
     - All bids;
