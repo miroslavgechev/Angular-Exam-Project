@@ -24,11 +24,11 @@ Angular Project
 # Applicaton
 
 ## Application Type
-Eccommerce Store for ???
+Bidding system for products
 
 ## Public Pages
-* Home Page
-    - Static page with top products
+* Home -> Product Page
+    - top 3 offers - based on number of bids
 
 * Login 
     - email
@@ -39,42 +39,47 @@ Eccommerce Store for ???
     - password
     - repeat password
 
-* Catalog Page - Dynamic #1
-    - All Products;
-    - Product Name;
-    - Product Price;
+## Private Pages
+
+* All Bids - Dynamic Page #1 
+    - All bids;
+    - excl. bids user is bidding on;
+    - Sort by category;
+
+* Placed Bids - Dynamic Page #2
+    - Order by:
+        - Time left of offer;
+        - Current Highest Offer - is best offer user's or 3rd party;
+
+* Place Bid Page - Dynamic #3
+    - Field of information;
+    - Current Best Offer;
+    - Label showing your credit;
+    - Field for bid;
+    - Place bid;
+
+* Create Offer Page:
+    - Fields:
+        - What are you selling;
+        - Category /options list/;
+        - Add Photos /links to dropbox accounts/;
+        - Description;
+        - Location;
+        - Price - in EUR;
+        - Offer duration;
 
 * About Page
 
 * Contacts Page
 
-## Private Pages
-
-* Product Details Page - Dynamic #2
-    - Product Name;
-    - Product Description;
-    - Product Price;
-    - Q-ty Field;
-    - Add-to-cart Button;
-
-* Shopping Cart - Dynamic #3
-    - All added to cart products;
-    - Product Name (with link to product);
-    - Product Q-ty (update field);
-    - Total Price;
-    - Del;
-
-* Checkout Function - Dynamic #4
-    - List all products as text;
-    - Add delivery address;
-    - Choose delivery options;
-    - Pay;
+* User Settings Page
+    - Change passwords;
+    - Add Funds /in a field -> future integration with payment system/ 
 
 * Logout Btn / Page
 
-Version 2:
-* Product Page:
-    - Add top 3 advantages / reasons to buy this product
-
-* Profile Page:
-    - Add Funds /in a field -> future integration with payment system/ 
+OPTIONAL:
+* Bids Statistics - Dynamic Page #4:
+    - Won bids;
+    - Lost bids;
+    - Some chart - won vs lost;
