@@ -24,7 +24,7 @@ Angular Project
 # Applicaton
 
 ## Application Type
-Eccommerce Store for ???
+Store for Curated Air Purifiers
 
 ## Public Pages
 * Home Page
@@ -45,8 +45,6 @@ Eccommerce Store for ???
     - Product Price;
 
 * About Page
-
-* Contacts Page
 
 ## Private Pages
 
@@ -70,11 +68,14 @@ Eccommerce Store for ???
     - Choose delivery options;
     - Pay;
 
+* Profile Page - Dynamic #5
+    - add delivery address;
+    - add funds
+
 * Logout Btn / Page
 
 Version 2:
-* Product Page:
-    - Add top 3 advantages / reasons to buy this product
-
 * Profile Page:
     - Add Funds /in a field -> future integration with payment system/ 
+
+* Comparisson Function

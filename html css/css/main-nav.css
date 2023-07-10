@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.header{
+    background-color: rgb(255,255,255);
+}
+
+.nav-main{
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    margin: 0 3em;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgb(174, 172, 172);
+
+}
+.nav-main:hover{
+    background-color: rgb(255,255,255);
+    transition: background-color 0.5s ease;
+}
+
+.nav-logo a{
+    font-size: 2em !important;
+    font-weight: 700;
+    text-decoration: underline;
+    font-family: 'Marcellus', serif;
+}
+
+.nav-main a {
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: rgb(0,0,0);
+}
+
+.nav-menu > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+    text-decoration: none;
+}
+
+.nav-menu a:hover, .nav-shopping-cart a:hover{
+    color: rgba(0, 0, 0, 0.7)
+}
