@@ -27,8 +27,10 @@ Angular Project
 Store for Curated Air Purifiers
 
 ## Public Pages
-* Home Page
-    - Static page with top products
+* Home - Catalog Page - Dynamic #1
+    - All Products;
+    - Product Name;
+    - Product Price;
 
 * Login 
     - email
@@ -39,12 +41,7 @@ Store for Curated Air Purifiers
     - password
     - repeat password
 
-* Catalog Page - Dynamic #1
-    - All Products;
-    - Product Name;
-    - Product Price;
-
-* About Page
+* About Page - TO DO
 
 ## Private Pages
 
@@ -55,27 +52,28 @@ Store for Curated Air Purifiers
     - Q-ty Field;
     - Add-to-cart Button;
 
-* Shopping Cart - Dynamic #3
+* Shopping Cart - Dynamic #3 - TO DO - div if not products are added;
     - All added to cart products;
     - Product Name (with link to product);
     - Product Q-ty (update field);
     - Total Price;
     - Del;
 
-* Checkout Function - Dynamic #4
+* Profile Page - Dynamic #4 - TO DO
+    - add delivery address;
+    - add funds;
+
+* Logout Btn - TO DO
+
+# Version 2:
+* Profile Page:
+    - Add Payment Method /in a field -> future integration with payment system/ 
+
+* Comparisson Function
+
+* Checkout Function - Dynamic #5
     - List all products as text;
     - Add delivery address;
     - Choose delivery options;
     - Pay;
-
-* Profile Page - Dynamic #5
-    - add delivery address;
-    - add funds
-
-* Logout Btn / Page
-
-Version 2:
-* Profile Page:
-    - Add Funds /in a field -> future integration with payment system/ 
-
-* Comparisson Function
+    - Integration with Payment System;
