@@ -142,13 +142,6 @@
     font-size: 1.5em;
 }
 
-p.cart-error {
-    text-align: right;
-    border-radius: 0.3em;
-    color: red;
-    padding-top: 0;
-}
-
 .buy-btn {
     align-self: center;
     padding: 1em 2em;
@@ -176,4 +169,20 @@ p.cart-error {
     padding-top: 0.5em;
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.8em;
+}
+
+/* error */
+p.cart-error {
+    text-align: right;
+    border-radius: 0.3em;
+    color: red;
+    padding-top: 0;
+}
+
+p.cart-error a {
+    color: red;
+}
+
+p.cart-error a:hover {
+    color: rgba(255, 0, 0,0.5);
 }

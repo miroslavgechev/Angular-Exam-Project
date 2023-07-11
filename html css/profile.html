@@ -29,43 +29,41 @@
     </header>
 
     <main class="container">
+        <div class="profile-container">
 
-        <form class="login" action="" method="post">
+            <h1>Your Profile</h1>
 
-            <h1>Sign In Form</h1>
+            <form class="update" action="" method="post">
 
-            <p class="field field-icon">
-                <label for="email"><span><i class="fas fa-envelope"></i></span></label>
-                <input class="input-error" type="email" name="email" id="email" placeholder="john.doe@gmail.com">
-            </p>
+                <p class="funds-message">You have <span>1000 EUR</span> in your credit account.</p>
 
-            <!-- <p class="error">
-                Email is required!
-            </p> -->
-            <!-- <p class="error">
-                        Email is not valid!
-                    </p> -->
+                <!-- add funds -->
+                <p class="field field-icon add-funds">
+                    <label for="funds"><span><i class="fa-solid fa-euro-sign"></i></span></label>
+                    <input class="input-error" type="number" name="address" id="address" placeholder="1000"
+                        value="Johny">
+                </p>
 
-            <p class="field field-icon">
-                <label for="password"><span><i class="fas fa-lock"></i></span></label>
-                <input type="password" name="password" id="password" placeholder="******">
-            </p>
+                <button>Add Funds</button>
 
-            <!-- <p class="error">
-                        Password is required!
-                    </p>
-                    <p class="error">
-                        Password must be at least 4 characters!
-                    </p> -->
+            </form>
 
-            <button>Sign In</button>
+            <form class="update" action="" method="post">
 
-            <p class="text-center">
-                Don't have an account?
-                <a href="signup.html">Sign Up</a>
-            </p>
+                <!-- delivery address -->
+                <p class="field field-icon">
+                    <label for="country"><span><i class="fa-solid fa-location-dot"></i></span></label>
+                    <select name="select-country" id="select-country" class="country">
+                        <option value="00359">BG</option>
+                    </select>
+                    <input type="text" name="address" id="address"
+                        placeholder="Sofia, 78 Aleksandar Malinov Boulevard, fl. 1">
+                </p>
 
-        </form>
+                <button>Update Delivery Address</button>
+            </form>
+
+        </div>
     </main>
 
     <footer>

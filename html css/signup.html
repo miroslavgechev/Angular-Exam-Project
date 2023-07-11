@@ -12,7 +12,7 @@
     <header>
         <nav class="nav-main">
             <div class="nav-logo">
-                <a href="index.html">#CuratedPurifiers</a>
+                <a href="index.html"><span>#Curated</span><span>Purifiers</span></a>
             </div>
 
             <div class="nav-shopping-cart">
@@ -21,7 +21,8 @@
 
             <div class="nav-menu">
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a></li>
+                    <li><a href="/signin.html"><i class="fa-solid fa-door-open"></i> Sign In</a></li>
+                    <!-- <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Logout</a></li> -->
                 </ul>
             </div>
         </nav>
@@ -31,69 +32,76 @@
 
         <form class="register" action="" method="post">
 
-                <h2>Sign Up Form</h2>
+            <h1>Sign Up Form</h1>
 
-                <!-- username -->
-                <p class="field field-icon">
-                    <label for="username"><span><i class="fas fa-user"></i></span></label>
-                    <input class="input-error" type="text" name="username" id="username" placeholder="Johny">
-                </p>
-                <!-- <p class="error">
+            <!-- username -->
+            <p class="field field-icon">
+                <label for="username"><span><i class="fas fa-user"></i></span></label>
+                <input class="input-error" type="text" name="username" id="username" placeholder="Johny">
+            </p>
+            <!-- <p class="error">
                     Username is required!
                 </p> -->
 
-                <!-- email -->
-                <p class="field field-icon">
-                    <label for="email"><span><i class="fas fa-envelope"></i></span></label>
-                    <input type="email" name="email" id="email" placeholder="john.doe@gmail.com">
-                </p>
-                <!-- <p class="error">
+            <!-- email -->
+            <p class="field field-icon">
+                <label for="email"><span><i class="fas fa-envelope"></i></span></label>
+                <input type="email" name="email" id="email" placeholder="john.doe@gmail.com">
+            </p>
+            <!-- <p class="error">
                         Email is required!
                     </p>
                     <p class="error">
                         Email is not valid!
                     </p> -->
 
-                <!-- telephone -->
-                <p class="field field-icon">
-                    <label for="tel"><span><i class="fas fa-phone"></i></span></label>
-                    <select name="select-tel" id="select-tel" class="tel">
-                        <option value="00359">+359</option>
-                    </select>
-                    <input type="text" name="tel" id="tel" placeholder="885 888 888">
-                </p>
+            <!-- telephone -->
+            <p class="field field-icon">
+                <label for="tel"><span><i class="fas fa-phone"></i></span></label>
+                <select name="select-tel" id="select-tel" class="tel">
+                    <option value="00359">+359</option>
+                </select>
+                <input type="text" name="tel" id="tel" placeholder="885 888 888">
+            </p>
 
-                <!-- password -->
-                <p class="field field-icon">
-                    <label for="password"><span><i class="fas fa-lock"></i></span></label>
-                    <input type="password" name="password" id="password" placeholder="******">
-                </p>
-                <!-- <p class="error">
+            <!-- password -->
+            <p class="field field-icon">
+                <label for="password"><span><i class="fas fa-lock"></i></span></label>
+                <input type="password" name="password" id="password" placeholder="******">
+            </p>
+            <!-- <p class="error">
                         Password is required!
                     </p>
                     <p class="error">
                         Password must be at least 4 characters!
                     </p> -->
 
-                <!-- rePassword -->
-                <p class="field field-icon">
-                    <label for="rePassword"><span><i class="fas fa-lock"></i></span></label>
-                    <input type="password" name="rePassword" id="rePassword" placeholder="******">
-                </p>
-                <!-- <p class="error">Repeat Password does not match password!</p> -->
+            <!-- rePassword -->
+            <p class="field field-icon">
+                <label for="rePassword"><span><i class="fas fa-lock"></i></span></label>
+                <input type="password" name="rePassword" id="rePassword" placeholder="******">
+            </p>
+            <!-- <p class="error">Repeat Password does not match password!</p> -->
 
-                <button>Create Account</button>
+            <button>Create Account</button>
 
-                <p class="text-center">
-                    Have an account?
-                    <a href="signin.html">Sign In</a>
-                </p>
+            <p class="text-center">
+                Have an account?
+                <a href="signin.html">Sign In</a>
+            </p>
 
         </form>
     </main>
 
     <footer>
         <p>© 2023 #Curated Inc. All Rights Reserved.</p>
+
+        <div class="footer-nav">
+            <a href="profile.html" class="profile-link">
+                <i class="fa-solid fa-user"></i> Your profile</a>
+            <a href="about.html" class="profile-link">
+                <i class="fa-solid fa-circle-info"></i> About #Curated</a>
+        </div>
     </footer>
 </body>
 

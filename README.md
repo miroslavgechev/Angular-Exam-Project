@@ -52,18 +52,18 @@ Store for Curated Air Purifiers
     - Q-ty Field;
     - Add-to-cart Button;
 
-* Shopping Cart - Dynamic #3 - TO DO - div if not products are added;
+* Shopping Cart - Dynamic #3;
     - All added to cart products;
     - Product Name (with link to product);
     - Product Q-ty (update field);
     - Total Price;
     - Del;
 
-* Profile Page - Dynamic #4 - TO DO
+* Profile Page - Dynamic #4
     - add delivery address;
     - add funds;
 
-* Logout Btn - TO DO
+* Logout Btn
 
 # Version 2:
 * Profile Page:
@@ -77,3 +77,6 @@ Store for Curated Air Purifiers
     - Choose delivery options;
     - Pay;
     - Integration with Payment System;
+
+* Create Page
+    - Page seeable only by admin for adding new products to the site.
