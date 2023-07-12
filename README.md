@@ -62,6 +62,7 @@ Store for Curated Air Purifiers
 * Profile Page - Dynamic #4
     - add delivery address;
     - add funds;
+    - order histor - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 * Logout Btn
 

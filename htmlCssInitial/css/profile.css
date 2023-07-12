@@ -1,0 +1,93 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1em; */
+}
+
+form.update {
+    width: 30%;
+    margin: 0em auto 0;
+    text-align: center;
+}
+
+.update {
+    border-radius: 0.3em;
+    padding: 0.8em;
+    padding-bottom: 3em;
+    background-color: rgb(255, 255, 255);
+}
+
+.update p {
+    padding-bottom: 0;
+    padding-top: 1.5em;
+}
+
+.update input {
+    flex: 0 1 100%;
+    border: 1px solid;
+    padding: 0.3em;
+    border-left: 0.3em solid green;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+
+.update button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.6em 1.2em;
+    margin-top: 1.5em;
+    width: 50%;
+    outline: none;
+}
+
+.update i {
+    border: 1px solid;
+    border-right: none;
+    padding: 0.55em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    background-color: rgb(242, 242, 242);
+}
+
+.update a {
+    color: #007bff;
+}
+
+.update a:hover {
+    cursor: pointer;
+}
+
+.update .country {
+    padding-right: 0.8em;
+}
+
+.update .field {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.update .add-funds{
+    padding-top: 1em;
+}
+
+/* messages */
+.funds-message span{
+    color: green;
+    font-weight: 600;
+}
+
+/* errors  */
+p.error {
+    text-align: left;
+    border-radius: 0.3em;
+    color: red;
+    padding-top: 0;
+}
+
+.input-error {
+    border-left-color: red;
+}

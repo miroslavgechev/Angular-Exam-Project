@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Store for Curated Air Purifiers</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-logo">
+                <a href="index.html"><span>#Curated</span><span>Purifiers</span></a>
+            </div>
+
+            <div class="nav-shopping-cart">
+                <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="/signin.html"><i class="fa-solid fa-door-open"></i> Sign In</a></li>
+                    <!-- <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Logout</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="profile-container">
+
+            <h1>Your Profile</h1>
+
+            <form class="update" action="" method="post">
+
+                <p class="funds-message">You have <span>1000 EUR</span> in your credit account.</p>
+
+                <!-- add funds -->
+                <p class="field field-icon add-funds">
+                    <label for="funds"><span><i class="fa-solid fa-euro-sign"></i></span></label>
+                    <input class="input-error" type="number" name="address" id="address" placeholder="1000"
+                        value="Johny">
+                </p>
+
+                <button>Add Funds</button>
+
+            </form>
+
+            <form class="update" action="" method="post">
+
+                <!-- delivery address -->
+                <p class="field field-icon">
+                    <label for="country"><span><i class="fa-solid fa-location-dot"></i></span></label>
+                    <select name="select-country" id="select-country" class="country">
+                        <option value="00359">BG</option>
+                    </select>
+                    <input type="text" name="address" id="address"
+                        placeholder="Sofia, 78 Aleksandar Malinov Boulevard, fl. 1">
+                </p>
+
+                <button>Update Delivery Address</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 #Curated Inc. All Rights Reserved.</p>
+
+        <div class="footer-nav">
+            <a href="profile.html" class="profile-link">
+                <i class="fa-solid fa-user"></i> Your profile</a>
+            <a href="about.html" class="profile-link">
+                <i class="fa-solid fa-circle-info"></i> About #Curated</a>
+        </div>
+    </footer>
+</body>
+
+</html>
