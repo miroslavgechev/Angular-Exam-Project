@@ -1,0 +1,1 @@
+* Improve image loading times.

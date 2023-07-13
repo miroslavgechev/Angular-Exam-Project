@@ -1,1 +1,23 @@
-<p>catalog works!</p>
+<div class="container">
+
+    <div>
+        <h1>All Gear</h1>
+    </div>
+
+    <div class="card-container">
+        <div *ngFor="let card of cardsList" class="product-card"
+            style="background-image: url({{card.imageCatalogUrl}});" id="{{card.id}}" appOnMouseHover>
+
+            <div class="product-info">
+                <div class="curator-name">
+                    <a>{{card.curatedName}}</a>
+                </div>
+                <div class="product-price">
+                    <a>{{card.priceInEur}} EUR</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

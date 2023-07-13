@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { FeatureRoutingModule } from './feature-routing.module';
+import { OnMouseHoverDirective } from './on-mouse-hover.directive';
 
 
 
 @NgModule({
   declarations: [
     AboutComponent,
-    CatalogComponent
+    CatalogComponent,
+    OnMouseHoverDirective
   ],
   imports: [
     CommonModule,
