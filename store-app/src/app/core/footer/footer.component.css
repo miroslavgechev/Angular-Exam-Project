@@ -9,6 +9,10 @@ footer{
     background-color: rgb(33, 33, 33);
     color: rgb(255,255,255);
     padding: 1em 1.5em;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer .footer-nav{
@@ -22,6 +26,3 @@ footer a.profile-link{
     font-size: 1em;
     text-decoration: none;
 }
-
-
-
