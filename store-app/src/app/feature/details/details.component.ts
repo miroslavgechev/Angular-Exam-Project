@@ -9,22 +9,31 @@ import { DetailedCard } from 'src/app/types/detailedCard';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit {
-
   item!: DetailedCard;
   filters: string = '';
+  activeIndex: number = 0;
+  galleryLength: number = 0;
 
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     const id: number = this.route.snapshot.params['id'];
 
-    this.apiService.getItemDetails(id).subscribe( {
-      next: cardDetails => {
+    this.apiService.getItemDetails(id).subscribe({
+      next: (cardDetails) => {
         this.item = cardDetails;
         this.filters = this.item.specs.filters.join('/');
+        this.galleryLength = this.item.imageDetailsUrl.length;
       },
-      error: err => console.log(err)
+      error: (err) => console.log(err),
     });
+  }
 
+  nextImage() {
+    this.activeIndex = (this.activeIndex + 1) % this.galleryLength;
+  }
+
+  prevImage() {
+    this.activeIndex = (this.activeIndex - 1 + this.galleryLength) % this.galleryLength;
   }
 }
