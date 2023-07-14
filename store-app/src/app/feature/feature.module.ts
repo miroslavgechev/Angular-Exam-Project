@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { FeatureRoutingModule } from './feature-routing.module';
 import { OnMouseHoverDirective } from './on-mouse-hover.directive';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -11,7 +12,8 @@ import { OnMouseHoverDirective } from './on-mouse-hover.directive';
   declarations: [
     AboutComponent,
     CatalogComponent,
-    OnMouseHoverDirective
+    OnMouseHoverDirective,
+    DetailsComponent
   ],
   imports: [
     CommonModule,

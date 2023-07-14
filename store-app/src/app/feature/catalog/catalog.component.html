@@ -5,7 +5,7 @@
     </div>
 
     <div class="card-container">
-        <div *ngFor="let card of cardsList" class="product-card"
+        <div *ngFor="let card of cardsList" class="product-card" [routerLink]="['/details', card.id]"
             style="background-image: url({{card.imageCatalogUrl}});" id="{{card.id}}" appOnMouseHover>
 
             <div class="product-info">
@@ -16,7 +16,6 @@
                     <a>{{card.priceInEur}} EUR</a>
                 </div>
             </div>
-
         </div>
 
     </div>

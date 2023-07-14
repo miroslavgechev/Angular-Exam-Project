@@ -18,7 +18,6 @@ export class CatalogComponent implements OnInit{
     this.apiService.getCatalog().subscribe({
       next: cards => {
         this.cardsList = cards;
-        console.log(this.cardsList);
       },
       error: err => console.log(err)
     }

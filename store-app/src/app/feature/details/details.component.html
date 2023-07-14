@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="product-container">
+
+        <div class="gallery">
+            <i class="fa-solid fa-chevron-left"></i>
+            <img src="{{item.imageDetailsUrl[0]}}" alt="">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="product-information">
+            <div class="product-header">
+                <p>{{item.curatedName}}</p>
+                <h1>{{item.model}}</h1>
+            </div>
+
+            <div class="description">
+                <p>{{item.description}}</p>
+            </div>
+
+            <div class="product-specs">
+                <ul>
+                    <li><span>Dimensions:</span> {{item.specs.dimensionsHeightInCm}} x {{item.specs.dimensionsWidthInCm}} x {{item.specs.dimensionsLengthInCm}} cm</li>
+                    <li><span>Weight:</span> {{item.specs.weightInKg}} kg</li>
+                    <li><span>Suggested room size:</span> {{item.specs.roomSizeInM2}} m2</li>
+                    <li><span>Filters:</span> {{filters}}</li>
+                    <li><span>CADR (smoke/dust/pollen):</span> {{item.specs.cadrSmoke}}/{{item.specs.cadrDust}}/{{item.specs.cadrPollen}}</li>
+                    <li><span>Noise level:</span> {{item.specs.noiseLevelMin}} dB / {{item.specs.noiseLevelMax}} dB</li>
+                    <li><span>Energy use (24 hours):</span> {{item.specs.energyUseKwh}} kWh</li>
+                </ul>
+            </div>
+
+            <div class="add-to-cart">
+                <div class="buy-btn">
+                    <a href="#">{{item.priceInEur}} EUR - Add to cart</a>
+                </div>
+                <p class="free-shipping">Free shipping in EU
+                <p>
+            </div>
+
+        </div>
+    </div>
+</div>
