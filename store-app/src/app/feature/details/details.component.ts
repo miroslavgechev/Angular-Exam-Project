@@ -9,10 +9,11 @@ import { DetailedCard } from 'src/app/types/detailedCard';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit {
-  item!: DetailedCard;
+  item: DetailedCard | undefined;
   filters: string = '';
   activeIndex: number = 0;
   galleryLength: number = 0;
+  imageLoaded: boolean[] = [];
 
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 
@@ -24,6 +25,10 @@ export class DetailsComponent implements OnInit {
         this.item = cardDetails;
         this.filters = this.item.specs.filters.join('/');
         this.galleryLength = this.item.imageDetailsUrl.length;
+
+        for (let i = 0; i < this.galleryLength; i++) {
+          this.imageLoaded.push(false);
+        }
       },
       error: (err) => console.log(err),
     });
@@ -34,6 +39,11 @@ export class DetailsComponent implements OnInit {
   }
 
   prevImage() {
-    this.activeIndex = (this.activeIndex - 1 + this.galleryLength) % this.galleryLength;
+    this.activeIndex =
+      (this.activeIndex - 1 + this.galleryLength) % this.galleryLength;
+  }
+
+  onImageLoad(index: number) {
+    this.imageLoaded[index] = true;
   }
 }

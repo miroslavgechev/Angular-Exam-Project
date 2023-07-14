@@ -32,7 +32,7 @@ Store for Curated Air Purifiers
     - Product Name;
     - Product Price;
 
-* Login 
+* Login
     - email
     - password
     
@@ -41,7 +41,7 @@ Store for Curated Air Purifiers
     - password
     - repeat password
 
-* About Page - TO DO
+* About Page
 
 ## Private Pages
 
@@ -49,10 +49,9 @@ Store for Curated Air Purifiers
     - Product Name;
     - Product Description;
     - Product Price;
-    - Q-ty Field;
     - Add-to-cart Button;
 
-* Shopping Cart - Dynamic #3;
+* Shopping Cart - Dynamic #3
     - All added to cart products;
     - Product Name (with link to product);
     - Product Q-ty (update field);
@@ -62,7 +61,7 @@ Store for Curated Air Purifiers
 * Profile Page - Dynamic #4
     - add delivery address;
     - add funds;
-    - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    - order history
 
 * Logout Btn
 

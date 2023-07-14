@@ -3,41 +3,45 @@
     <div class="product-container">
 
         <div class="gallery">
-            <button (click)="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>
-
-            <img *ngFor="let img of item.imageDetailsUrl; let i = index" [ngClass]="{'active': i === activeIndex}"
-                [src]="img" alt="Product Image">
+            <button (click)="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>        
+            
+            <div class="image-loader" *ngIf="!imageLoaded[activeIndex]">
+                <app-loader></app-loader>
+            </div>
+            
+            <img *ngFor="let img of item?.imageDetailsUrl; let i = index" [ngClass]="{'active': i === activeIndex}"
+                [src]="img" (load)="onImageLoad(i)" alt="Product Image">
 
             <button (click)="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
 
         <div class="product-information">
             <div class="product-header">
-                <p>{{item.curatedName}}</p>
-                <h1>{{item.model}}</h1>
+                <p>{{item?.curatedName}}</p>
+                <h1>{{item?.model}}</h1>
             </div>
 
             <div class="description">
-                <p>{{item.description}}</p>
+                <p>{{item?.description}}</p>
             </div>
 
             <div class="product-specs">
                 <ul>
-                    <li><span>Dimensions:</span> {{item.specs.dimensionsHeightInCm}} x
-                        {{item.specs.dimensionsWidthInCm}} x {{item.specs.dimensionsLengthInCm}} cm</li>
-                    <li><span>Weight:</span> {{item.specs.weightInKg}} kg</li>
-                    <li><span>Suggested room size:</span> {{item.specs.roomSizeInM2}} m2</li>
+                    <li><span>Dimensions:</span> {{item?.specs?.dimensionsHeightInCm}} x
+                        {{item?.specs?.dimensionsWidthInCm}} x {{item?.specs?.dimensionsLengthInCm}} cm</li>
+                    <li><span>Weight:</span> {{item?.specs?.weightInKg}} kg</li>
+                    <li><span>Suggested room size:</span> {{item?.specs?.roomSizeInM2}} m2</li>
                     <li><span>Filters:</span> {{filters}}</li>
                     <li><span>CADR (smoke/dust/pollen):</span>
-                        {{item.specs.cadrSmoke}}/{{item.specs.cadrDust}}/{{item.specs.cadrPollen}}</li>
-                    <li><span>Noise level:</span> {{item.specs.noiseLevelMin}} dB / {{item.specs.noiseLevelMax}} dB</li>
-                    <li><span>Energy use (24 hours):</span> {{item.specs.energyUseKwh}} kWh</li>
+                        {{item?.specs?.cadrSmoke}}/{{item?.specs?.cadrDust}}/{{item?.specs?.cadrPollen}}</li>
+                    <li><span>Noise level:</span> {{item?.specs?.noiseLevelMin}} dB / {{item?.specs?.noiseLevelMax}} dB</li>
+                    <li><span>Energy use (24 hours):</span> {{item?.specs?.energyUseKwh}} kWh</li>
                 </ul>
             </div>
 
             <div class="add-to-cart">
                 <div class="buy-btn">
-                    <a href="#">{{item.priceInEur}} EUR - Add to cart</a>
+                    <a href="#">{{item?.priceInEur}} EUR - Add to cart</a>
                 </div>
                 <p class="free-shipping">Free shipping in EU
                 <p>

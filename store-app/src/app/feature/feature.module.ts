@@ -5,6 +5,7 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { FeatureRoutingModule } from './feature-routing.module';
 import { OnMouseHoverDirective } from './on-mouse-hover.directive';
 import { DetailsComponent } from './details/details.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,7 +18,8 @@ import { DetailsComponent } from './details/details.component';
   ],
   imports: [
     CommonModule,
-    FeatureRoutingModule
+    FeatureRoutingModule,
+    SharedModule
   ]
 })
 export class FeatureModule { }

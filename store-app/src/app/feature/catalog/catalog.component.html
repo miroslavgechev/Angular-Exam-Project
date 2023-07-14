@@ -5,11 +5,15 @@
     </div>
 
     <div class="card-container">
-        <div *ngFor="let card of cardsList" class="product-card" [routerLink]="['/details', card.id]"
-             id="{{card.id}}" appOnMouseHover>
+        <div *ngFor="let card of cardsList; let i = index" class="product-card" [routerLink]="['/details', card.id]"
+            id="{{card.id}}" appOnMouseHover>
 
-            <img class="background active" src="{{card.imageCatalogUrl}}" alt="">
-            <img class="background inactive cover" src="{{card.imageCatalogHoverUrl}}" alt="">
+            <div class="image-loader" *ngIf="!imageLoaded[i]">
+                <app-loader></app-loader>
+            </div>
+            
+            <img class="background active" src="{{card.imageCatalogUrl}}" (load)="onImageLoad(i)" alt="Product Image">
+            <img class="background inactive cover" src="{{card.imageCatalogHoverUrl}}" alt="Product Image In Use">
 
             <div class="product-info">
                 <div class="curator-name">

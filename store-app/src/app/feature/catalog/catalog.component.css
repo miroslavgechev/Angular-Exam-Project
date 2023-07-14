@@ -19,16 +19,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(242, 242, 242);
-
     border-radius: 0.8em;
-
     height: 35em;
     flex: 1 0 30%;
     display: flex;
-
     position: relative;
-
     overflow: hidden;
+}
+
+.image-loader{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    translate: transform(-50%, -50%);
 }
 
 img.background{
