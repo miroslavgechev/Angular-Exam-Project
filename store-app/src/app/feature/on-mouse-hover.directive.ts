@@ -1,5 +1,4 @@
 import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
-import { CatalogComponent } from './catalog/catalog.component';
 
 @Directive({
   selector: '[appOnMouseHover]',
@@ -8,57 +7,54 @@ export class OnMouseHoverDirective {
   constructor(
     private el: ElementRef,
     private renderer: Renderer2,
-    private catalogComponent: CatalogComponent
   ) {}
 
   @HostListener('mouseenter', ['$event']) onMouseEnter(e: MouseEvent) {
-    const imgHoverUrl = this.catalogComponent.cardsList.find(
-      (card) => card.id == this.el.nativeElement.id
-    )?.imageCatalogHoverUrl;
+    const activeElement: HTMLElement =
+      this.el.nativeElement.querySelector('.active');
+    const inactiveElement: HTMLElement =
+      this.el.nativeElement.querySelector('.inactive');
+    const aTags: HTMLElement[] = this.el.nativeElement.querySelectorAll('a');
 
-    if (imgHoverUrl) {
-      this.changeBackgroundOnMouseEnter(imgHoverUrl);
-    } else {
-      return;
-    }
+    this.changeBackgroundOnMouseEnter(activeElement, inactiveElement, aTags);
   }
 
   @HostListener('mouseleave', ['$event']) onMouseLeave(e: MouseEvent) {
-    const imgUrl = this.catalogComponent.cardsList.find(
-      (card) => card.id == this.el.nativeElement.id
-    )?.imageCatalogUrl;
+    const activeElement = this.el.nativeElement.querySelector('.active');
+    const inactiveElement = this.el.nativeElement.querySelector('.inactive');
+    const aTags: HTMLElement[] = this.el.nativeElement.querySelectorAll('a');
 
-    if (imgUrl) {
-      this.changeBackgroundOnMouseLeave(imgUrl);
-    } else {
-      return;
-    }
+    this.changeBackgroundOnMouseLeave(activeElement, inactiveElement, aTags);
   }
 
-  private changeBackgroundOnMouseEnter(url: string) {
-    this.renderer.setStyle(
-      this.el.nativeElement,
-      'background-image',
-      `url(${url})`
-    );
-    this.renderer.setStyle(this.el.nativeElement, 'background-size', 'cover');
+  private changeBackgroundOnMouseEnter(
+    activeElement: HTMLElement,
+    inactiveElement: HTMLElement,
+    aTags: HTMLElement[]
+  ) {
+    activeElement.classList.remove('active');
+    activeElement.classList.add('inactive');
 
-    const childElements = this.el.nativeElement.querySelectorAll('a');
-    childElements.forEach((el: string) => {
+    inactiveElement.classList.remove('inactive');
+    inactiveElement.classList.add('active');
+
+    aTags.forEach((el: HTMLElement) => {
       this.renderer.setStyle(el, 'color', 'rgb(255,255,255)');
     });
   }
 
-  private changeBackgroundOnMouseLeave(url: string) {
-    this.renderer.setStyle(
-      this.el.nativeElement,
-      'background-image',
-      `url(${url})`
-    );
-    this.renderer.setStyle(this.el.nativeElement, 'background-size', 'contain');
+  private changeBackgroundOnMouseLeave(
+    activeElement: HTMLElement,
+    inactiveElement: HTMLElement,
+    aTags: HTMLElement[]
+  ) {
+    activeElement.classList.remove('active');
+    activeElement.classList.add('inactive');
 
-    const childElements = this.el.nativeElement.querySelectorAll('a');
-    childElements.forEach((el: string) => {
+    inactiveElement.classList.remove('inactive');
+    inactiveElement.classList.add('active');
+
+    aTags.forEach((el: HTMLElement) => {
       this.renderer.setStyle(el, 'color', 'rgb(0,0,0)');
     });
   }
