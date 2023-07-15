@@ -26,7 +26,7 @@
 - Profile Page - Dynamic #4 - TO DO
   - add delivery address;
   - add funds;
-  - profile settings - change passwords, email, username.
+  - profile settings - change passwords, email, username. | Separate page to edit username and password and post
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - Logout Btn
@@ -36,3 +36,5 @@
 - About Page - - Text
 
 - move constants to shared folder
+
+- add guards
