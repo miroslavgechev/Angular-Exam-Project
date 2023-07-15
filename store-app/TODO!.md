@@ -1,14 +1,17 @@
 - Take the loader into features to a service.
 
-- Login - TO DO
+- Login
   - email
   - password
-- Register - TO DO
+
+- Register
   - email
   - password
   - repeat password
 
-- About Page - TO DO - Text
+- User DB + cart + orders
+
+- How to post to Firebase. Firebase with Angular.
 
 - Product Details Page - Dynamic #2 - TO DO - add to cart btn
 
@@ -22,8 +25,11 @@
 - Profile Page - Dynamic #4 - TO DO
   - add delivery address;
   - add funds;
+  - profile settings - change passwords, email, username.
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-- Logout Btn - TO DO
+- Logout Btn
 
 - Documentation
+
+- About Page - - Text
