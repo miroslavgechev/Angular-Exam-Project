@@ -3,6 +3,7 @@
 - Login
   - email
   - password
+  - validation -> form red/green | button disabled/enabled
 
 - Register
   - email
@@ -33,3 +34,5 @@
 - Documentation
 
 - About Page - - Text
+
+- move constants to shared folder
