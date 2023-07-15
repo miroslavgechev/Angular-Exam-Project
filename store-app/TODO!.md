@@ -24,9 +24,9 @@
   - Del;
 
 - Profile Page - Dynamic #4 - TO DO
-  - add delivery address;
-  - add funds;
-  - profile settings - change passwords, email, username. | Separate page to edit username and password and post
+  - add delivery address - one form;
+  - add funds - one form;
+  - profile settings - change passwords, email, username | Page to edit username and password and post - one form
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - Logout Btn
