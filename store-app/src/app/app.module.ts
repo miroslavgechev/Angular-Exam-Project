@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { FeatureModule } from './feature/feature.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthModule } from './auth/auth.module';
+import { appInterceptorProvider } from './api.interceptor';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     CoreModule,
     FeatureModule,
+    AuthModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [appInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

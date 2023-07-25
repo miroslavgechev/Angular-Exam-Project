@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Card } from './types/card';
-import { CATALOG_API_URL, CATALOG_API_URL_EXT } from 'src/constants';
-import { DetailedCard } from './types/detailedCard';
+import { API_URL_EXT, CATALOG_API_URL, } from 'src/constants';
+import { DetailedCard } from './types/cardDetailed';
 
 
 @Injectable({
@@ -12,10 +12,10 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getCatalog(){
-    return this.http.get<Card[]>(`${CATALOG_API_URL}${CATALOG_API_URL_EXT}`)
+    return this.http.get<Card[]>(`/api/purifiers${API_URL_EXT}`)
   }
 
   getItemDetails(id: number){
-    return this.http.get<DetailedCard>(`${CATALOG_API_URL}/${id}${CATALOG_API_URL_EXT}`)
+    return this.http.get<DetailedCard>(`${CATALOG_API_URL}/${id}${API_URL_EXT}`)
   }
 }
