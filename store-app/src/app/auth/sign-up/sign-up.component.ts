@@ -9,7 +9,8 @@ import { AuthService } from '../auth.service';
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css'],
 })
-export class SignUpComponent {
+export class SignUpComponent implements OnInit{
+
   form = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
     passGroup: this.formBuilder.group(
@@ -25,6 +26,10 @@ export class SignUpComponent {
     private formBuilder: FormBuilder,
     private authService: AuthService
   ) {}
+
+    ngOnInit(): void {
+      this.authService.getAllUsers();
+    }
 
   register(): void {
     if (this.form.invalid) {

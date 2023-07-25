@@ -10,6 +10,7 @@
 
 - Register
   - check for duplicate users? - download all data on Init.
+  - isLogged functionality.
   - lazy loading
 
 - User DB + cart + orders
