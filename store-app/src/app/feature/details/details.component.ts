@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
-import { DetailedCard } from 'src/app/types/detailedCard';
+import { DetailedCard } from 'src/app/types/cardDetailed';
 
 @Component({
   selector: 'app-details',

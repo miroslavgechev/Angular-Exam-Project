@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { of } from 'rxjs';
 import { ApiService } from 'src/app/api.service';
 import { Card } from 'src/app/types/card';
 

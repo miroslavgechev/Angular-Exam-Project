@@ -1,4 +1,4 @@
-import { Specs } from './specs';
+import { Specs } from './cardDetailedSpecs';
 
 export interface DetailedCard {
   id: number;
