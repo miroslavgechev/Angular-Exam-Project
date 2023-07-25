@@ -9,7 +9,6 @@
   - error handling (password or username is incorrect)
 
 - Register
-  - check for duplicate users? - download all data on Init.
   - isLogged functionality.
   - lazy loading
 
@@ -35,6 +34,8 @@
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - Logout Btn
+
+- 404 page
 
 - Documentation
 

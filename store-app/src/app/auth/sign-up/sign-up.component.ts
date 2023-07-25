@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { passwordMatchValidator } from '../validators/password-match-validator';
-import { User } from 'src/app/types/user';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -9,7 +8,8 @@ import { AuthService } from '../auth.service';
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css'],
 })
-export class SignUpComponent implements OnInit{
+export class SignUpComponent implements OnInit {
+  isEmailTaken: boolean = false;
 
   form = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
@@ -27,9 +27,9 @@ export class SignUpComponent implements OnInit{
     private authService: AuthService
   ) {}
 
-    ngOnInit(): void {
-      this.authService.getAllUsers();
-    }
+  ngOnInit(): void {
+    this.authService.getAllUsers();
+  }
 
   register(): void {
     if (this.form.invalid) {
@@ -37,6 +37,6 @@ export class SignUpComponent implements OnInit{
     }
 
     const { email, passGroup } = this.form.value;
-    this.authService.register(email!, passGroup!.password!);
+    this.isEmailTaken = this.authService.register(email!, passGroup!.password!);
   }
 }

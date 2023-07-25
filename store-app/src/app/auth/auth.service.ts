@@ -6,39 +6,36 @@ import { API_URL_EXT, USER_API_URL } from 'src/constants';
 @Injectable({
   providedIn: 'root',
 })
-export class AuthService implements OnInit {
+export class AuthService {
   user: User = {} as User;
   users: User[] = [];
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {
+  register(email: string, password: string): boolean {
     this.getAllUsers();
-  }
-
-  register(email: string, password: string) {
-    this.getAllUsers();
-
+    
     if (this.users) {
       const isEmailTaken = this.isEmailInDb(email);
-
       if (isEmailTaken) {
-        return alert('Email is already taken!');
+        return true;
       }
     }
 
-    this.user = this.formUserJSON(email, password);
+    this.user = this.formUserInJSON(email, password);
 
     this.http.post(`${USER_API_URL}${API_URL_EXT}`, this.user).subscribe({
-      next: (id) => {
-        console.log(id);
-        this.setAuthToken(this.user.id);
+      next: () => {
+        this.setTokens(this.user.id, this.user.email, this.user.creditInEur);
+
       },
       error: (err) => console.log(err),
     });
+
+    return false;
   }
 
-  private formUserJSON(email: string, password: string): User {
+  private formUserInJSON(email: string, password: string): User {
     return {
       id: this.generateUniqueId(),
       email,
@@ -50,6 +47,7 @@ export class AuthService implements OnInit {
         street: '',
       },
       tel: '',
+      creditInEur: 0
     };
   }
 
@@ -59,15 +57,17 @@ export class AuthService implements OnInit {
     });
   }
 
-  isEmailInDb(email: string): boolean {
+  private isEmailInDb(email: string): boolean {
     return Object.values(this.users).some((user) => user.email === email);
   }
 
-  setAuthToken(token: string) {
-    localStorage.setItem('curatedAuthToken', token);
+  private setTokens(token: string, email: string, creditInEur: number) {
+    sessionStorage.setItem('curatedAuthToken', token);
+    sessionStorage.setItem('curatedEmail', email);
+    sessionStorage.setItem('curatedCredit', creditInEur.toString());
   }
 
-  generateUniqueId(): string {
+  private generateUniqueId(): string {
     const timestamp = new Date().getTime().toString(36);
     const randomStr = Math.random().toString(36).substring(2, 10);
     return timestamp + randomStr;

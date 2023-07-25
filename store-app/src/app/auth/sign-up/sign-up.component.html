@@ -15,6 +15,10 @@
             <p class="error" *ngIf="form.get('email')?.errors?.['email']">Email is not valid!</p>
         </ng-container>
 
+        <ng-container>
+            <p class="error" *ngIf="isEmailTaken">Email is already registered!</p>
+        </ng-container>
+
         <!-- password & rePasswords-->
         <ng-container formGroupName="passGroup">
             <p class="field field-icon">
