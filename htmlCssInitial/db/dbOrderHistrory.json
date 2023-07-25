@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "userId": 10000,
+    "orderDate": "Jun 15, 2019",
+    "items": [
+      {
+        "productId": 0,
+        "quantity": 1,
+        "UnitPriceInEur": 299
+      },
+      {
+        "productId": 2,
+        "quantity": 1,
+        "UnitPriceInEur": 199
+      }
+    ]
+  }
+]

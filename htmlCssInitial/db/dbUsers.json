@@ -1,0 +1,28 @@
+[
+  {
+    "id": 10000,
+    "email": "miroslav@gmail.com",
+    "username": "miroslav",
+    "password": 12345,
+    "address": {
+      "country": "Bulgaria",
+      "city": "Sofia",
+      "street": "Vitosha 5"
+    },
+    "tel": "00359123456789",
+    "orderIds": []
+  },
+  {
+    "id": 10001,
+    "email": "ivan@gmail.com",
+    "username": "ivan",
+    "password": 12345,
+    "address": {
+      "country": "Slovakia",
+      "city": "Bratislav",
+      "street": "Zapadna 5"
+    },
+    "tel": "00421123456789",
+    "orderIds": []
+  }
+]
