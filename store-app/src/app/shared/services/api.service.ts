@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Card } from './types/card';
 import { API_URL_EXT, CATALOG_API_URL, } from 'src/constants';
-import { DetailedCard } from './types/cardDetailed';
+import { Card } from 'src/app/types/card';
+import { DetailedCard } from 'src/app/types/cardDetailed';
 
 
 @Injectable({
