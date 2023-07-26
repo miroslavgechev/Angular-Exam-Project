@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { passwordMatchValidator } from '../validators/password-match-validator';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -24,7 +25,8 @@ export class SignUpComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -38,5 +40,9 @@ export class SignUpComponent implements OnInit {
 
     const { email, passGroup } = this.form.value;
     this.isEmailTaken = this.authService.register(email!, passGroup!.password!);
+
+    if(!this.isEmailTaken){
+      this.router.navigate(['/']);
+    }
   }
 }

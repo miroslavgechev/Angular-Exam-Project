@@ -28,7 +28,7 @@
         </ng-container>
 
         <ng-container>
-            <p class="error" *ngIf="!isAnyCredentialIncorrect">Credentials are incorrect!</p>
+            <p class="error" *ngIf="!areCredentialsCorrect">Credentials are incorrect!</p>
         </ng-container>
 
         <button [disabled]="form.invalid" [ngClass]="{'invalid': form.invalid}">Sign In</button>

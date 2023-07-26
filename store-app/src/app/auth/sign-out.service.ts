@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { AuthService } from './auth.service';
+import { Router } from '@angular/router';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SignOutService {
+  constructor(private authService: AuthService, private router: Router) {}
 
-  constructor(private authService: AuthService) { }
-
-  logout(){
-    this.authService.logout()
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['/']);
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -8,7 +9,7 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./sign-in.component.css'],
 })
 export class SignInComponent implements OnInit {
-  isAnyCredentialIncorrect: boolean = true;
+  areCredentialsCorrect: boolean = true;
 
   form = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
@@ -21,7 +22,8 @@ export class SignInComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   login(): void {
@@ -30,6 +32,10 @@ export class SignInComponent implements OnInit {
     }
 
     const { email, password } = this.form.value;
-    this.isAnyCredentialIncorrect = this.authService.login(email!, password!);
+    this.areCredentialsCorrect = this.authService.login(email!, password!);
+
+    if(this.areCredentialsCorrect){
+      this.router.navigate(['/']);
+    }
   }
 }

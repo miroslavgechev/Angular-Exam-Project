@@ -1,17 +1,11 @@
-- Take the loader into features to a service.
 
 - Login
-
-  - email
-  - password
-  - validation -> form red/green | button disabled/enabled
-  - error handling (password or username is incorrect)
   - lazy loading
 
 - Register
   - lazy loading
 
-- User DB + cart + orders
+- cart db
 
 - Product Details Page - Dynamic #2 - TO DO - add to cart btn
 
@@ -32,7 +26,7 @@
   - profile settings - change passwords, email, username | Page to edit username and password and post - one form
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-- Logout Btn
+- add guards
 
 - 404 page
 
@@ -40,14 +34,16 @@
 
 - About Page - - Text - Lazy Loading
 
+
+Good to haves:
+- Take the loader into features to a service.
+
 - move constants to shared folder
 
-- add guards
-
 - Make better email validation - with custom validator
-
-- Optional: add pipe for descriptions on main page, reduce to 100 symbols.
 
 - add lazy loading
 
 - add responsive design
+
+- Optional: add pipe for descriptions on main page, reduce to 100 symbols.
