@@ -7,7 +7,7 @@ import { CoreModule } from './core/core.module';
 import { FeatureModule } from './feature/feature.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './auth/auth.module';
-import { appInterceptorProvider } from './api.interceptor';
+import { appInterceptorProvider } from './shared/interceptors/api.interceptor';
 
 @NgModule({
   declarations: [
