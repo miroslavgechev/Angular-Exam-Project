@@ -13,7 +13,7 @@ export class AuthService {
 
   register(email: string, password: string): boolean {
     this.getAllUsers();
-    debugger
+
     if (this.users && this.isEmailInDb(email)) {
       return true;
     }
@@ -66,30 +66,11 @@ export class AuthService {
   }
 
   private setUser(user: User): void {
-    // this.setUserTokens(user.id, user.email, user.creditInEur);
-    debugger
     sessionStorage.setItem('curatedUser', JSON.stringify(user));
-    console.log(sessionStorage)
   }
 
-  removeUser(): void {
-   this.removeUserTokens();
-  }
-
-  private setUserTokens(token: string, email: string, creditInEur: number) {
-    sessionStorage.setItem('curatedAuthToken', token);
-    sessionStorage.setItem('curatedEmail', email);
-    sessionStorage.setItem('curatedCredit', creditInEur.toString());
-  }
-
-  // private setUserAsToken(user: User){
-  //   sessionStorage.setItem('curatedUser', JSON.stringify(user));
-  // }
-
-  private removeUserTokens(){
-    sessionStorage.removeItem('curatedAuthToken');
-    sessionStorage.removeItem('curatedEmail');
-    sessionStorage.removeItem('curatedCredit');
+  private removeUser(): void {
+    sessionStorage.removeItem('curatedUser')
   }
 
   private formUserInJSON(email: string, password: string): User {
