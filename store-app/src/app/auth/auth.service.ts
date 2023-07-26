@@ -7,16 +7,15 @@ import { API_URL_EXT, USER_API_URL } from 'src/constants';
   providedIn: 'root',
 })
 export class AuthService {
-  user: User = {} as User;
   users: User[] = [];
 
   constructor(private http: HttpClient) {}
 
   register(email: string, password: string): boolean {
     this.getAllUsers();
-
-    if (this.users) {
-      return this.isEmailInDb(email);
+    debugger
+    if (this.users && this.isEmailInDb(email)) {
+      return true;
     }
 
     const user = this.formUserInJSON(email, password);
@@ -41,6 +40,10 @@ export class AuthService {
     return false;
   }
 
+  logout(): void{
+    this.removeUser();
+  }
+
   getAllUsers() {
     return this.http.get(`${USER_API_URL}${API_URL_EXT}`).subscribe((users) => {
       this.users = users as User[];
@@ -56,7 +59,6 @@ export class AuthService {
     const isPasswordCorrect = user?.password === password;
 
     if (isPasswordCorrect) {
-      this.user = user;
       this.setUser(user);
     }
 
@@ -64,14 +66,30 @@ export class AuthService {
   }
 
   private setUser(user: User): void {
-    this.user = user;
-    this.setUserTokens(this.user.id, this.user.email, this.user.creditInEur);
+    // this.setUserTokens(user.id, user.email, user.creditInEur);
+    debugger
+    sessionStorage.setItem('curatedUser', JSON.stringify(user));
+    console.log(sessionStorage)
+  }
+
+  removeUser(): void {
+   this.removeUserTokens();
   }
 
   private setUserTokens(token: string, email: string, creditInEur: number) {
     sessionStorage.setItem('curatedAuthToken', token);
     sessionStorage.setItem('curatedEmail', email);
     sessionStorage.setItem('curatedCredit', creditInEur.toString());
+  }
+
+  // private setUserAsToken(user: User){
+  //   sessionStorage.setItem('curatedUser', JSON.stringify(user));
+  // }
+
+  private removeUserTokens(){
+    sessionStorage.removeItem('curatedAuthToken');
+    sessionStorage.removeItem('curatedEmail');
+    sessionStorage.removeItem('curatedCredit');
   }
 
   private formUserInJSON(email: string, password: string): User {

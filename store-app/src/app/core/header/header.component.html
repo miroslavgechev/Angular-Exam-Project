@@ -12,7 +12,7 @@
             <ul>
                 <li *ngIf="!isUserLoggedIn"><a routerLink="/signin"><i class="fa-solid fa-door-open"></i> Sign In</a>
                 </li>
-                <li><a *ngIf="isUserLoggedIn"><i class="fa-solid fa-right-to-bracket"></i> Logout</a></li>
+                <li><a *ngIf="isUserLoggedIn" (click)="logout()"><i class="fa-solid fa-right-to-bracket"></i> Sign Out</a></li>
             </ul>
         </div>
     </nav>

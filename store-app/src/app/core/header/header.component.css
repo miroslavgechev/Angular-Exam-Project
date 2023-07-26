@@ -52,6 +52,7 @@ header {
     list-style: none;
     gap: 2em;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-menu a:hover,
