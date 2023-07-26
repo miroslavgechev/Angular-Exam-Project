@@ -45,3 +45,5 @@ Good to haves:
 - add responsive design
 
 - Optional: add pipe for descriptions on main page, reduce to 100 symbols.
+
+- Create a page where admins can add products

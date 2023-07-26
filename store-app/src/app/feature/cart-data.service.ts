@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { DetailedCard } from '../types/cardDetailed';
 import { UserCart } from '../types/userCart';
-import { ApiService } from '../shared/services/api.service';
 import { OrderItem } from '../types/orderItem';
 import { Router } from '@angular/router';
 
@@ -9,8 +8,6 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class CartDataService {
-  userCart: UserCart | undefined;
-  allCarts: UserCart[] | UserCart | undefined;
   cart: OrderItem[] | null = null;
 
   constructor(private router: Router) {}
@@ -19,7 +16,6 @@ export class CartDataService {
     const newItem = this.createCartItem(item);
     
     this.cart = this.getCartItems();
-    console.log('Before:', this.cart)
     
     if(this.cart === null){
       this.cart = [newItem];
@@ -31,17 +27,13 @@ export class CartDataService {
       if (isItemAlreadyAdded) {
         const itemIndex = this.cart.findIndex((cartItem) => cartItem.productId === newItem.productId);
         this.cart[itemIndex].quantity++;
-
       } else {
         this.cart.push(newItem);
       }
     }
 
-    console.log('After:', this.cart)
     this.saveCart();
-
     this.router.navigate(['/cart']);
-
   }
 
   createCartItem(item: DetailedCard): OrderItem {
