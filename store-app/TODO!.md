@@ -5,16 +5,13 @@
   - email
   - password
   - validation -> form red/green | button disabled/enabled
-  - lazy loading
   - error handling (password or username is incorrect)
+  - lazy loading
 
 - Register
-  - isLogged functionality.
   - lazy loading
 
 - User DB + cart + orders
-
-- How to post to Firebase. Firebase with Angular.
 
 - Product Details Page - Dynamic #2 - TO DO - add to cart btn
 
@@ -25,6 +22,8 @@
   - Product Q-ty (update field);
   - Total Price;
   - Del;
+  - initially set data in a variable;
+  - Data persistance in user db
 
 - Profile Page - Dynamic #4 - TO DO
 
@@ -44,6 +43,8 @@
 - move constants to shared folder
 
 - add guards
+
+- Make better email validation - with custom validator
 
 - Optional: add pipe for descriptions on main page, reduce to 100 symbols.
 

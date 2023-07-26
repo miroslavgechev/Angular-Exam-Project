@@ -1,34 +1,37 @@
 <div class="container">
 
-    <form class="login" action="" method="post">
+    <form class="login" [formGroup]="form" (ngSubmit)="login()">
 
-        <h1>Sign In Form</h1>
+        <h1>Sign In</h1>
 
         <p class="field field-icon">
             <label for="email"><span><i class="fas fa-envelope"></i></span></label>
-            <input class="input-error" type="email" name="email" id="email" placeholder="john.doe@gmail.com">
+            <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" formControlName="email">
         </p>
 
-        <!-- <p class="error">
-                Email is required!
-            </p> -->
-        <!-- <p class="error">
-                        Email is not valid!
-                    </p> -->
+        <ng-container *ngIf="form.get('email')?.touched">
+            <p class="error" *ngIf="form.get('email')?.errors?.['required']">Email is required!</p>
+            <p class="error" *ngIf="form.get('email')?.errors?.['email']">Email is not valid!</p>
+        </ng-container>
 
         <p class="field field-icon">
             <label for="password"><span><i class="fas fa-lock"></i></span></label>
-            <input type="password" name="password" id="password" placeholder="******">
+            <input type="password" name="password" id="password" placeholder="******" formControlName="password">
         </p>
 
-        <!-- <p class="error">
-                        Password is required!
-                    </p>
-                    <p class="error">
-                        Password must be at least 4 characters!
-                    </p> -->
+        <ng-container *ngIf="form.get('password')?.touched">
+            <p class="error" *ngIf="form.get('password')?.errors?.['required']">Password is
+                required!</p>
+            <p class="error" *ngIf="form.get('password')?.errors?.['minlength']">Password must
+                be at least {{form.get('password')?.errors?.['minlength']['requiredLength']}}
+                characters!</p>
+        </ng-container>
 
-        <button>Sign In</button>
+        <ng-container>
+            <p class="error" *ngIf="!isAnyCredentialIncorrect">Credentials are incorrect!</p>
+        </ng-container>
+
+        <button [disabled]="form.invalid" [ngClass]="{'invalid': form.invalid}">Sign In</button>
 
         <p class="text-center">
             Don't have a profile?

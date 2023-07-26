@@ -14,25 +14,64 @@ export class AuthService {
 
   register(email: string, password: string): boolean {
     this.getAllUsers();
-    
+
     if (this.users) {
-      const isEmailTaken = this.isEmailInDb(email);
-      if (isEmailTaken) {
-        return true;
-      }
+      return this.isEmailInDb(email);
     }
 
-    this.user = this.formUserInJSON(email, password);
+    const user = this.formUserInJSON(email, password);
 
-    this.http.post(`${USER_API_URL}${API_URL_EXT}`, this.user).subscribe({
+    this.http.post(`${USER_API_URL}${API_URL_EXT}`, user).subscribe({
       next: () => {
-        this.setTokens(this.user.id, this.user.email, this.user.creditInEur);
-
+        this.setUser(user);
       },
       error: (err) => console.log(err),
     });
 
     return false;
+  }
+
+  login(email: string, password: string): boolean {
+    this.getAllUsers();
+
+    if (this.users) {
+      return this.isEmailPasswordMatch(email, password);
+    }
+
+    return false;
+  }
+
+  getAllUsers() {
+    return this.http.get(`${USER_API_URL}${API_URL_EXT}`).subscribe((users) => {
+      this.users = users as User[];
+    });
+  }
+
+  private isEmailInDb(email: string): boolean {
+    return Object.values(this.users).some((user) => user.email === email);
+  }
+
+  private isEmailPasswordMatch(email: string, password: string): boolean {
+    const user = Object.values(this.users).find((user) => user.email === email);
+    const isPasswordCorrect = user?.password === password;
+
+    if (isPasswordCorrect) {
+      this.user = user;
+      this.setUser(user);
+    }
+
+    return isPasswordCorrect;
+  }
+
+  private setUser(user: User): void {
+    this.user = user;
+    this.setUserTokens(this.user.id, this.user.email, this.user.creditInEur);
+  }
+
+  private setUserTokens(token: string, email: string, creditInEur: number) {
+    sessionStorage.setItem('curatedAuthToken', token);
+    sessionStorage.setItem('curatedEmail', email);
+    sessionStorage.setItem('curatedCredit', creditInEur.toString());
   }
 
   private formUserInJSON(email: string, password: string): User {
@@ -47,24 +86,8 @@ export class AuthService {
         street: '',
       },
       tel: '',
-      creditInEur: 0
+      creditInEur: 0,
     };
-  }
-
-  getAllUsers() {
-    return this.http.get(`${USER_API_URL}${API_URL_EXT}`).subscribe((users) => {
-      this.users = users as User[];
-    });
-  }
-
-  private isEmailInDb(email: string): boolean {
-    return Object.values(this.users).some((user) => user.email === email);
-  }
-
-  private setTokens(token: string, email: string, creditInEur: number) {
-    sessionStorage.setItem('curatedAuthToken', token);
-    sessionStorage.setItem('curatedEmail', email);
-    sessionStorage.setItem('curatedCredit', creditInEur.toString());
   }
 
   private generateUniqueId(): string {
