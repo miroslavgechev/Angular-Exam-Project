@@ -6,6 +6,7 @@ import { FeatureRoutingModule } from './feature-routing.module';
 import { OnMouseHoverDirective } from './on-mouse-hover.directive';
 import { DetailsComponent } from './details/details.component';
 import { SharedModule } from '../shared/shared.module';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -14,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     AboutComponent,
     CatalogComponent,
     OnMouseHoverDirective,
-    DetailsComponent
+    DetailsComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,

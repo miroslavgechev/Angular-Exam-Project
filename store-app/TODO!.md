@@ -10,7 +10,6 @@
 - Product Details Page - Dynamic #2 - TO DO - add to cart btn
 
 - Shopping Cart - Dynamic #3 - TO DO
-
   - All added to cart products;
   - Product Name (with link to product);
   - Product Q-ty (update field);
@@ -20,7 +19,6 @@
   - Data persistance in user db
 
 - Profile Page - Dynamic #4 - TO DO
-
   - add delivery address - one form;
   - add funds - one form;
   - profile settings - change passwords, email, username | Page to edit username and password and post - one form
