@@ -26,4 +26,5 @@ footer a.profile-link{
     color: rgb(255,255,255);
     font-size: 1em;
     text-decoration: none;
+    cursor: pointer;
 }

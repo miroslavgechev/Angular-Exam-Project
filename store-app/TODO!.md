@@ -4,20 +4,19 @@
 - Register
   - lazy loading
 
-- cart db
-
 - Product Details Page - Dynamic #2 - TO DO - add to cart btn
   - //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!! if error (e.g. id doesn't exist)
 
-
 - Shopping Cart - Dynamic #3 - TO DO
-  - All added to cart products;
   - Product Name (with link to product);
   - Product Q-ty (update field);
   - Total Price;
   - Del;
   - initially set data in a variable;
   - Data persistance in user db
+  - add loader on image or on the whole page
+  - error handling
+  - when purchase is completed - decrease credit and push to order history
 
 - Profile Page - Dynamic #4 - TO DO
   - add delivery address - one form;
@@ -47,3 +46,5 @@ Good to haves:
 - Optional: add pipe for descriptions on main page, reduce to 100 symbols.
 
 - Create a page where admins can add products
+
+- cart db

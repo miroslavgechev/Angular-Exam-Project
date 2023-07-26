@@ -20,7 +20,7 @@
                     <a>{{card.curatedName}}</a>
                 </div>
                 <div class="product-price">
-                    <a>{{card.priceInEur}} EUR</a>
+                    <a>{{card.priceInEur | currency: 'EUR' : 'symbol' :'1.0-0'}}</a>
                 </div>
             </div>
         </div>

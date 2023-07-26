@@ -8,15 +8,36 @@ import { CartDataService } from '../cart-data.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit{
-  cart: OrderItem[] | null = null;
+  cart: OrderItem[] | null | undefined;
   
 constructor(private cartDataService: CartDataService) { }
 
   ngOnInit(): void {
-    this.cart = this.cartDataService.cart;
-    debugger
+    this.cart = this.cartDataService.getCartItems();
+    
   }
 
+  removeItemFromCart(id: number | string): void{
 
+  }
+
+  increaseQuantity(id: number | string): void{
+
+  }
+
+  decreaseQuantity(id: number | string): void{
+
+  }
+
+  getCartTotal(): number{
+    return 100
+  }
+
+  getUserCredit(): number{
+    return 10501
+  }
+
+  checkout(): void{
+  }
 
 }

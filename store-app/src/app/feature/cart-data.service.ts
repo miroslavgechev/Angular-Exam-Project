@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { DetailedCard } from '../types/cardDetailed';
-import { UserCart } from '../types/userCart';
 import { OrderItem } from '../types/orderItem';
 import { Router } from '@angular/router';
 
@@ -8,7 +7,8 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class CartDataService {
-  cart: OrderItem[] | null = null;
+
+  cart: OrderItem[] | null | undefined;
 
   constructor(private router: Router) {}
 
@@ -31,7 +31,7 @@ export class CartDataService {
         this.cart.push(newItem);
       }
     }
-
+    
     this.saveCart();
     this.router.navigate(['/cart']);
   }
