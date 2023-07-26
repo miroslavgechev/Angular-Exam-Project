@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { User } from '../types/user';
 import { API_URL_EXT, USER_API_URL } from 'src/constants';
+import { CartDataService } from '../feature/cart-data.service';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ import { API_URL_EXT, USER_API_URL } from 'src/constants';
 export class AuthService {
   users: User[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private cartDataService: CartDataService) {}
 
   register(email: string, password: string): boolean {
     this.getAllUsers();
@@ -66,11 +67,13 @@ export class AuthService {
   }
 
   private setUser(user: User): void {
-    sessionStorage.setItem('curatedUser', JSON.stringify(user));
+    localStorage.setItem('curatedUser', JSON.stringify(user));
   }
 
   private removeUser(): void {
-    sessionStorage.removeItem('curatedUser')
+    localStorage.removeItem('curatedUser')
+    this.cartDataService.clearCart();
+
   }
 
   private formUserInJSON(email: string, password: string): User {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/shared/services/api.service';
 import { DetailedCard } from 'src/app/types/cardDetailed';
+import { CartDataService } from '../cart-data.service';
 
 @Component({
   selector: 'app-details',
@@ -15,7 +16,7 @@ export class DetailsComponent implements OnInit {
   galleryLength: number = 0;
   imageLoaded: boolean[] = [];
 
-  constructor(private apiService: ApiService, private route: ActivatedRoute) {}
+  constructor(private apiService: ApiService, private route: ActivatedRoute, private cartDataService: CartDataService) {}
 
   ngOnInit(): void {
     const id: number = this.route.snapshot.params['id'];
@@ -30,7 +31,10 @@ export class DetailsComponent implements OnInit {
           this.imageLoaded.push(false);
         }
       },
-      error: (err) => console.log(err),
+      error: (err) => {
+        console.log(err)
+        //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!!
+      },
     });
   }
 
@@ -45,5 +49,10 @@ export class DetailsComponent implements OnInit {
 
   onImageLoad(index: number) {
     this.imageLoaded[index] = true;
+  }
+
+  addToCart(){
+    this.cartDataService.addItemToCart(this.item!);
+    
   }
 }

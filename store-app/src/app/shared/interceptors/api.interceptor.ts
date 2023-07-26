@@ -23,7 +23,6 @@ export class ApiInterceptor implements HttpInterceptor {
         url: request.url.replace('/api', API_URL),
         // withCredentials: true,
       });
-      console.log(request.url)
     }
 
     return next.handle(request).pipe(

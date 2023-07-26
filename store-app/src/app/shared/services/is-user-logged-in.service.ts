@@ -7,6 +7,6 @@ export class IsUserLoggedInService {
   constructor() {}
 
   get isUserLoggedIn(): boolean {
-    return !!sessionStorage.getItem('curatedUser');
+    return !!localStorage.getItem('curatedUser');
   }
 }

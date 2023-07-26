@@ -1,0 +1,17 @@
+[
+  {
+    "userId": "lkji989b5ez0oikc",
+    "cartItems": [
+      {
+        "productId": 1,
+        "quantity": 1,
+        "unitPriceInEur": 259
+      },
+      {
+        "productId": 2,
+        "quantity": 1,
+        "unitPriceInEur": 199
+      }
+    ]
+  }
+]

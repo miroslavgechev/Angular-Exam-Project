@@ -1,4 +1,3 @@
-
 - Login
   - lazy loading
 
@@ -8,6 +7,8 @@
 - cart db
 
 - Product Details Page - Dynamic #2 - TO DO - add to cart btn
+  - //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!! if error (e.g. id doesn't exist)
+
 
 - Shopping Cart - Dynamic #3 - TO DO
   - All added to cart products;
@@ -31,7 +32,6 @@
 - Documentation
 
 - About Page - - Text - Lazy Loading
-
 
 Good to haves:
 - Take the loader into features to a service.
