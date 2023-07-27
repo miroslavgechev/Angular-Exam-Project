@@ -1,0 +1,84 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1em; */
+}
+
+div.list {
+    width: 30%;
+    margin: 0em auto 0;
+    text-align: center;
+}
+
+.list {
+    border-radius: 0.3em;
+    padding: 0.8em;
+    padding-bottom: 3em;
+    background-color: rgb(255, 255, 255);
+}
+
+.list p {
+    padding-bottom: 0;
+    padding-top: 1.5em;
+}
+
+.list input {
+    flex: 0 1 100%;
+    border: 1px solid;
+    padding: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+
+.list i {
+    border: 1px solid;
+    border-right: none;
+    padding: 0.55em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    background-color: rgb(242, 242, 242);
+}
+
+.list a {
+    color: #007bff;
+}
+
+.list {
+    padding-right: 0.8em;
+}
+
+.list .field {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.list .user-data{
+    padding-top: 1em;
+}
+
+/* Code for review */
+
+
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.2em;
+    border-bottom: 1px solid rgb(174, 172, 172);
+}
+
+.cart-item-image img{
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+}
+
+.cart-item-data{
+    display: flex;
+    gap: 5em;
+    justify-content: space-between;
+    padding-right: 0.2em;
+}

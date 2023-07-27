@@ -1,4 +1,3 @@
-
 - Product Details Page - Dynamic #2
   - //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!! if error (e.g. id doesn't exist)
 
@@ -7,14 +6,18 @@
   - error handling - if address is not filled in
   - integrate strype test payment system
 
+- Login page - add address for user?
+- Login page - add phone number for user?
+
 - Checkout Page - Dynamic #4:
   - View Order - without being able to change it
   - Add Delivery Address - one form
+
   - Pay
+
   - Push to order history
   - Clear cart
-  - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  - 
+  - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 
 - Profile Page - Dynamic #5 - TO DO
   - see email
@@ -27,7 +30,7 @@
 
 - Documentation
 
-- About Page - - Text
+- About Page - Text
 
 Good to haves:
 - Take the loader into features to a service.
@@ -51,8 +54,3 @@ Good to haves:
 - optimize card data service
 
 - put in production
-
-Profile Page - Dynamic #4 - TO DO
-  - change password
-  - change username
-  - profile settings - change passwords, email, username | Page to edit username and password and post - one form

@@ -2,7 +2,7 @@
     <p>© 2023 #Curated Inc. All Rights Reserved.</p>
 
     <div class="footer-nav">
-        <a *ngIf="isUserLoggedIn" class="profile-link">
+        <a *ngIf="isUserLoggedIn" routerLink="/profile" class="profile-link">
             <i class="fa-solid fa-user"></i> Your profile</a>
         <a routerLink="/about" class="profile-link">
             <i class="fa-solid fa-circle-info"></i> About #Curated</a>
