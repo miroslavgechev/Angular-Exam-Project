@@ -2,11 +2,11 @@
 
     <div class="cart-container">
 
-        <ng-container *ngIf="!cart">
+        <ng-container *ngIf="isCartEmpty()">
             <h1>Your Cart is empty</h1>
         </ng-container>
 
-        <ng-container *ngIf="cart">
+        <ng-container *ngIf="!isCartEmpty()">
             <h1>Your Cart</h1>
 
             <div class="cart-items-list">
@@ -27,9 +27,10 @@
                         </div>
 
                         <div class="cart-item-quantity">
-                            <a class="sign" disabled (click)="decreaseQuantity(item.productId)">-</a>
+                            <a class="sign-disabled" *ngIf="item.quantity<=1">-</a>
+                            <a class="sign" *ngIf="item.quantity>1" (click)="decreaseItemQuantity(item.productId)">-</a>
                             <p class="quantity">{{item.quantity}}</p>
-                            <a class="sign" (click)="increaseQuantity(item.productId)">+</a>
+                            <a class="sign" (click)="increaseItemQuantity(item.productId)">+</a>
                             <a class="remove-btn" (click)="removeItemFromCart(item.productId)">Remove</a>
                         </div>
                     </div>
@@ -42,18 +43,15 @@
                         <p class="total-price">{{getCartTotal() | currency: 'EUR' : 'symbol' :'1.0-2'}}</p>
                     </div>
 
-                    <div class="cart-credit">
+                    <!-- <div class="cart-credit">
                         <p>Your Credit:</p>
                         <p class="total-credit">{{getUserCredit() | currency: 'EUR' : 'symbol' :'1.0-2'}}</p>
-                    </div>
-
-                    <!-- <p class="cart-error funds-error">
-                            Credit is insufficient. <a href="profile.html">Add funds to continue.</a>
-                        </p>
+                    </div> -->
     
-                        <p class="cart-error address-error">
+                        <!-- <p class="cart-error address-error">
                             No delivery address. <a href="profile.html">Update delivery address to continue.</a>
                         </p> -->
+                        
                 </div>
 
                 <div class="cart-checkout">

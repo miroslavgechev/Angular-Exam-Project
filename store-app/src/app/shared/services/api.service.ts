@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { API_URL_EXT, CATALOG_API_URL, USER_CART_URL } from 'src/constants';
+import { API_URL_EXT, CATALOG_API_URL, ORDERS_API_URL } from 'src/constants';
 import { Card } from 'src/app/types/card';
 import { DetailedCard } from 'src/app/types/cardDetailed';
-import { UserCart } from 'src/app/types/userCart';
+import { Order } from 'src/app/types/order';
 
 @Injectable({
   providedIn: 'root',
@@ -21,15 +21,7 @@ export class ApiService {
     );
   }
 
-  getAllCarts() {
-    return this.http.get<UserCart[]>(`${USER_CART_URL}${API_URL_EXT}`);
-  }
-
-  deleteAllCarts() {
-    return this.http.delete(`${USER_CART_URL}${API_URL_EXT}`);
-  }
-
-  updateCarts(carts: UserCart) {
-    return this.http.post(`${USER_CART_URL}${API_URL_EXT}`, carts);
+  postOrder(order: Order) {
+    return this.http.post<Order>(`${ORDERS_API_URL}${API_URL_EXT}`, order);
   }
 }

@@ -13,31 +13,43 @@ export class CartComponent implements OnInit{
 constructor(private cartDataService: CartDataService) { }
 
   ngOnInit(): void {
-    this.cart = this.cartDataService.getCartItems();
-    
+    this.loadCart()  
   }
 
   removeItemFromCart(id: number | string): void{
-
+    this.cartDataService.removeItemFromCart(id);
+    this.loadCart();
   }
 
-  increaseQuantity(id: number | string): void{
-
+  increaseItemQuantity(id: number | string): void{
+    this.cartDataService.increaseItemQuantity(id);
+    this.loadCart();
   }
 
-  decreaseQuantity(id: number | string): void{
-
+  decreaseItemQuantity(id: number | string): void{
+    this.cartDataService.decreaseItemQuantity(id);
+    this.loadCart();
   }
 
   getCartTotal(): number{
-    return 100
+    return this.cartDataService.getCartTotal();
   }
 
-  getUserCredit(): number{
-    return 10501
+  // getUserCredit(): number{
+  //   return this.cartDataService.getUserCredit();
+  // }
+
+  isCartEmpty(): boolean {
+    return this.cartDataService.isCartEmpty();
   }
 
   checkout(): void{
+    this.cartDataService.cartCheckout();
+    this.loadCart();
+  }
+
+  private loadCart(): void{
+    this.cart = this.cartDataService.getCartItems();
   }
 
 }

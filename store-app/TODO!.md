@@ -1,28 +1,25 @@
-- Login
-  - lazy loading
 
-- Register
-  - lazy loading
-
-- Product Details Page - Dynamic #2 - TO DO - add to cart btn
+- Product Details Page - Dynamic #2
   - //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!! if error (e.g. id doesn't exist)
 
 - Shopping Cart - Dynamic #3 - TO DO
-  - Product Name (with link to product);
-  - Product Q-ty (update field);
-  - Total Price;
-  - Del;
-  - initially set data in a variable;
-  - Data persistance in user db
   - add loader on image or on the whole page
-  - error handling
-  - when purchase is completed - decrease credit and push to order history
+  - error handling - if address is not filled in
+  - integrate strype test payment system
 
-- Profile Page - Dynamic #4 - TO DO
-  - add delivery address - one form;
-  - add funds - one form;
-  - profile settings - change passwords, email, username | Page to edit username and password and post - one form
+- Checkout Page - Dynamic #4:
+  - View Order - without being able to change it
+  - Add Delivery Address - one form
+  - Pay
+  - Push to order history
+  - Clear cart
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  - 
+
+- Profile Page - Dynamic #5 - TO DO
+  - see email
+  - see username
+  - see list of orders
 
 - add guards
 
@@ -30,7 +27,7 @@
 
 - Documentation
 
-- About Page - - Text - Lazy Loading
+- About Page - - Text
 
 Good to haves:
 - Take the loader into features to a service.
@@ -47,4 +44,15 @@ Good to haves:
 
 - Create a page where admins can add products
 
-- cart db
+- firebase authentication
+
+- if cart has items - update cart icon
+
+- optimize card data service
+
+- put in production
+
+Profile Page - Dynamic #4 - TO DO
+  - change password
+  - change username
+  - profile settings - change passwords, email, username | Page to edit username and password and post - one form
