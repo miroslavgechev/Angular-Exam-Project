@@ -15,7 +15,7 @@
             </p>
         </div>
 
-        
+
         <h2>Order History</h2>
 
         <div *ngIf="isOrderListEmpty()" class="no-orders">
@@ -41,8 +41,11 @@
                         <tr *ngFor="let item of order.items">
                             <td>
                                 <div class="order-item-image">
-                                    <img src={{item.imageUrl}}
-                                        alt="Air Purifier">
+                                    <img src={{item.imageUrl}} (load)="onImageLoad(i)" alt="Air Purifier">
+                                </div>
+                                
+                                <div class="image-loader" *ngIf="!imageLoaded[i]">
+                                    <app-loader-small></app-loader-small>
                                 </div>
                             </td>
                             <td>
@@ -52,7 +55,8 @@
                                 <p class="item">{{item.quantity}}</p>
                             </td>
                             <td>
-                                <p class="item">{{item.unitPriceInEur * item.quantity | currency: 'EUR' : 'symbol' :'1.0-2'}}</p>
+                                <p class="item">{{item.unitPriceInEur * item.quantity | currency: 'EUR' : 'symbol'
+                                    :'1.0-2'}}</p>
                             </td>
                         </tr>
                         <tr>

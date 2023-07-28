@@ -12,9 +12,12 @@ export class ProfileComponent implements OnInit {
   orders: Order[] | null = null;
   userEmail: string | null = null;
   userUsername: string | null = null;
+  imageLoaded: boolean[] = [];
 
-
-  constructor(private orderDataService: OrderDataService, private utilityService: UtilityService) {}
+  constructor(
+    private orderDataService: OrderDataService,
+    private utilityService: UtilityService
+  ) {}
 
   ngOnInit(): void {
     this.loadProfile();
@@ -31,6 +34,12 @@ export class ProfileComponent implements OnInit {
       next: (userOrders) => {
         this.orders = userOrders;
         this.orders?.reverse();
+
+        if (this.orders !== null) {
+          for (let i = 0; i < this.orders.length; i++) {
+            this.imageLoaded.push(false);
+          }
+        }
       },
       error: (err) => {
         console.error(err);
@@ -42,7 +51,11 @@ export class ProfileComponent implements OnInit {
     return this.orderDataService.isOrderListEmpty(this.orders);
   }
 
-  getOrdetTotal(itemIndex: number): number{
+  getOrdetTotal(itemIndex: number): number {
     return this.orderDataService.getOrderTotal(this.orders, itemIndex);
+  }
+
+  onImageLoad(index: number) {
+    this.imageLoaded[index] = true;
   }
 }

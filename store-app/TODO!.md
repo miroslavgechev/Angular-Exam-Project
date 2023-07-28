@@ -1,6 +1,3 @@
-- profile page
-  - add loader on image in tables
-
 - Documentation
 
 Good to haves:
