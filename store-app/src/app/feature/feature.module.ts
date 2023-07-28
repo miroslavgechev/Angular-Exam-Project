@@ -9,8 +9,6 @@ import { SharedModule } from '../shared/shared.module';
 import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
 
-
-
 @NgModule({
   declarations: [
     AboutComponent,
@@ -18,12 +16,8 @@ import { ProfileComponent } from './profile/profile.component';
     OnMouseHoverDirective,
     DetailsComponent,
     CartComponent,
-    ProfileComponent
+    ProfileComponent,
   ],
-  imports: [
-    CommonModule,
-    FeatureRoutingModule,
-    SharedModule
-  ]
+  imports: [CommonModule, FeatureRoutingModule, SharedModule],
 })
-export class FeatureModule { }
+export class FeatureModule {}

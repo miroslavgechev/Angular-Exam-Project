@@ -5,18 +5,9 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
-
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-    PageNotFoundComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports: [HeaderComponent, FooterComponent]
+  declarations: [HeaderComponent, FooterComponent, PageNotFoundComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [HeaderComponent, FooterComponent],
 })
-export class CoreModule { }
+export class CoreModule {}

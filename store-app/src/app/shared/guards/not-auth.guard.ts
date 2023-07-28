@@ -21,7 +21,7 @@ export class NotAuthUsersGuard implements CanActivate {
     state: RouterStateSnapshot
   ): boolean {
     if (this.isUserLoggedInService.isUserLoggedIn) {
-      this.router.navigate(['/catalog']); //!!!!!!!!!!!!!!!!!! Change to 404
+      this.router.navigate(['/404']);
       return false;
     } else {
       return true;

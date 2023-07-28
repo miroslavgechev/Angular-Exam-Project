@@ -16,7 +16,11 @@ export class DetailsComponent implements OnInit {
   galleryLength: number = 0;
   imageLoaded: boolean[] = [];
 
-  constructor(private apiService: ApiService, private route: ActivatedRoute, private cartDataService: CartDataService) {}
+  constructor(
+    private apiService: ApiService,
+    private route: ActivatedRoute,
+    private cartDataService: CartDataService
+  ) {}
 
   ngOnInit(): void {
     const id: number = this.route.snapshot.params['id'];
@@ -32,8 +36,7 @@ export class DetailsComponent implements OnInit {
         }
       },
       error: (err) => {
-        console.log(err)
-        //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!!
+        console.log(err);
       },
     });
   }
@@ -51,8 +54,7 @@ export class DetailsComponent implements OnInit {
     this.imageLoaded[index] = true;
   }
 
-  addToCart(){
+  addToCart() {
     this.cartDataService.addItemToCart(this.item!);
-    
   }
 }

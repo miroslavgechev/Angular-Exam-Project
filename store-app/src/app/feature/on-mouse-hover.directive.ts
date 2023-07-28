@@ -4,10 +4,7 @@ import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
   selector: '[appOnMouseHover]',
 })
 export class OnMouseHoverDirective {
-  constructor(
-    private el: ElementRef,
-    private renderer: Renderer2,
-  ) {}
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   @HostListener('mouseenter', ['$event']) onMouseEnter(e: MouseEvent) {
     const activeElement: HTMLElement =

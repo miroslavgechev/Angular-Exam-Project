@@ -1,4 +1,3 @@
-
 .product-container {
     display: flex;
     gap: 3em;
@@ -10,7 +9,7 @@
     height: 50em;
     display: flex;
     justify-content: center;
-    background-color:  rgb(242, 242, 242);
+    background-color: rgb(242, 242, 242);
     border-radius: 0.8em;
     position: relative;
     overflow: hidden;
@@ -35,7 +34,7 @@
     right: 1%;
 }
 
-.image-loader{
+.image-loader {
     position: absolute;
     left: 47.5%;
     top: 48%;
@@ -55,7 +54,7 @@
     background-color: transparent;
 }
 
-.gallery img.active{
+.gallery img.active {
     opacity: 1;
 }
 
@@ -86,15 +85,15 @@
     font-weight: 600;
 }
 
-.product-specs ul{
+.product-specs ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
     list-style: none;
 }
 
-.product-specs ul li{
-    background-color:   rgb(242, 242, 242);
+.product-specs ul li {
+    background-color: rgb(242, 242, 242);
     padding: 0.5em 1em;
     border-radius: 0.5em;
     font-size: 0.9em;

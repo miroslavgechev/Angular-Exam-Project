@@ -89,13 +89,13 @@ input.ng-invalid.ng-touched {
     border-left-color: rgb(214, 15, 15);
 }
 
-input.error{
+input.error {
     border-left-color: rgb(214, 15, 15) !important;
 }
 
 .login button.invalid,
-.register button.invalid{
+.register button.invalid {
     background-color: rgb(242, 242, 242);
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     cursor: auto;
 }

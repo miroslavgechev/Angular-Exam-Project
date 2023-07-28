@@ -13,7 +13,11 @@ const routes: Routes = [
   { path: 'catalog', component: CatalogComponent },
   { path: 'details/:id', component: DetailsComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'profile', component: ProfileComponent, canActivate: [AuthUsersGuard] },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthUsersGuard],
+  },
 ];
 
 @NgModule({

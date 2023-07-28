@@ -1,4 +1,4 @@
-import { Address } from "./userAddress";
+import { Address } from './userAddress';
 
 export interface User {
   id: string;

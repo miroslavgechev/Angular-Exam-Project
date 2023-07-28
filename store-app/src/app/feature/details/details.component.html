@@ -3,12 +3,12 @@
     <div class="product-container">
 
         <div class="gallery">
-            <button (click)="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>        
-            
+            <button (click)="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>
+
             <div class="image-loader" *ngIf="!imageLoaded[activeIndex]">
                 <app-loader></app-loader>
             </div>
-            
+
             <img *ngFor="let img of item?.imageDetailsUrl; let i = index" [ngClass]="{'active': i === activeIndex}"
                 [src]="img" (load)="onImageLoad(i)" alt="Product Image">
 
@@ -34,7 +34,8 @@
                     <li><span>Filters:</span> {{filters}}</li>
                     <li><span>CADR (smoke/dust/pollen):</span>
                         {{item?.specs?.cadrSmoke}}/{{item?.specs?.cadrDust}}/{{item?.specs?.cadrPollen}}</li>
-                    <li><span>Noise level:</span> {{item?.specs?.noiseLevelMin}} dB / {{item?.specs?.noiseLevelMax}} dB</li>
+                    <li><span>Noise level:</span> {{item?.specs?.noiseLevelMin}} dB / {{item?.specs?.noiseLevelMax}} dB
+                    </li>
                     <li><span>Energy use (24 hours):</span> {{item?.specs?.energyUseKwh}} kWh</li>
                 </ul>
             </div>

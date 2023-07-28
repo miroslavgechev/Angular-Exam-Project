@@ -3,7 +3,7 @@
     padding: 2em 2em;
 }
 
-.heading{
+.heading {
     margin-bottom: 0;
 }
 
@@ -27,14 +27,14 @@
     overflow: hidden;
 }
 
-.image-loader{
+.image-loader {
     position: absolute;
     left: 45%;
     top: 40%;
     translate: transform(-50%, -50%);
 }
 
-img.background{
+img.background {
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -53,7 +53,7 @@ img.inactive {
     opacity: 0;
 }
 
-img.cover{
+img.cover {
     object-fit: cover;
 }
 

@@ -20,7 +20,6 @@ export class AuthUsersGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean {
-    
     if (this.isUserLoggedInService.isUserLoggedIn) {
       return true;
     } else {

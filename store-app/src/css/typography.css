@@ -5,7 +5,13 @@ html {
     font: 16px/1.5 'Roboto', sans-serif;
 }
 
-body, form, input, textarea, option, select, button {
+body,
+form,
+input,
+textarea,
+option,
+select,
+button {
     font: inherit;
 }
 
@@ -13,7 +19,12 @@ body, form, input, textarea, option, select, button {
     font-family: 'Marcellus', serif;
 } */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
     font-weight: normal;
@@ -43,6 +54,11 @@ h6 {
     font-size: 1.0em;
 }
 
-p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
+p+h1,
+p+h2,
+p+h3,
+p+h4,
+p+h5,
+p+h6 {
     padding-top: 0.5em;
 }

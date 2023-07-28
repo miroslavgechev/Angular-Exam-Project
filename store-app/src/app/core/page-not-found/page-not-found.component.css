@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.not-found-message-container{
+.not-found-message-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
     padding-bottom: 3em;
 }
 
-.not-found-icon{
+.not-found-icon {
     font-size: 7em;
 }
 
@@ -38,4 +38,3 @@ div.btn {
     text-align: center;
     font-size: 1em;
 }
-

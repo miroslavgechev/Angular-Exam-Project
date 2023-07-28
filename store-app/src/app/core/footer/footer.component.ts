@@ -8,13 +8,9 @@ import { IsUserLoggedInService } from 'src/app/shared/services/is-user-logged-in
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
-  
   get isUserLoggedIn(): boolean {
     return !!this.isUserLoggedInService.isUserLoggedIn;
   }
 
-  constructor(
-    private router: Router,
-    private isUserLoggedInService: IsUserLoggedInService
-  ) {}
+  constructor(private isUserLoggedInService: IsUserLoggedInService) {}
 }

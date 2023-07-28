@@ -14,13 +14,11 @@ export class HeaderComponent {
   }
 
   constructor(
-    private router: Router,
     private isUserLoggedInService: IsUserLoggedInService,
     private signOutService: SignOutService
   ) {}
 
-  logout(){
+  logout() {
     this.signOutService.logout();
   }
-  
 }

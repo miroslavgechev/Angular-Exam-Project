@@ -11,7 +11,7 @@
             <div class="image-loader" *ngIf="!imageLoaded[i]">
                 <app-loader></app-loader>
             </div>
-            
+
             <img class="background active" src="{{card.imageCatalogUrl}}" (load)="onImageLoad(i)" alt="Product Image">
             <img class="background inactive cover" src="{{card.imageCatalogHoverUrl}}" alt="Product Image In Use">
 

@@ -6,13 +6,6 @@
 
 - Documentation
 
-- General error service - if any unhanded error - go to 404!
-
-- code cleanup and optimization
-
-
-
-
 Good to haves:
 
 - Checkout Page - Dynamic #4:
@@ -26,8 +19,6 @@ Good to haves:
   - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - Take the loader into features to a service.
-
-- move constants to shared folder
 
 - Make better email validation - with custom validator
 

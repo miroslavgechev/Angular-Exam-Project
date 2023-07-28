@@ -14,7 +14,7 @@ export class UtilityService {
     }
   }
 
-  getUserUsername(): string | null{
+  getUserUsername(): string | null {
     if (localStorage.getItem('curatedUser') === null) {
       return null;
     } else {
@@ -22,7 +22,7 @@ export class UtilityService {
     }
   }
 
-  getUserEmail(): string | null{
+  getUserEmail(): string | null {
     if (localStorage.getItem('curatedUser') === null) {
       return null;
     } else {

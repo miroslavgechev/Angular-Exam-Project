@@ -34,7 +34,7 @@ export class SignInComponent implements OnInit {
     const { email, password } = this.form.value;
     this.areCredentialsCorrect = this.authService.login(email!, password!);
 
-    if(this.areCredentialsCorrect){
+    if (this.areCredentialsCorrect) {
       this.router.navigate(['/']);
     }
   }

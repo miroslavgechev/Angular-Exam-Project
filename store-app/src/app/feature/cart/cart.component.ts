@@ -6,33 +6,36 @@ import { IsUserLoggedInService } from 'src/app/shared/services/is-user-logged-in
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
 })
-export class CartComponent implements OnInit{
+export class CartComponent implements OnInit {
   cart: OrderItem[] | null | undefined;
-  
-constructor(private cartDataService: CartDataService, private isUserLoggedInService: IsUserLoggedInService) { }
+
+  constructor(
+    private cartDataService: CartDataService,
+    private isUserLoggedInService: IsUserLoggedInService
+  ) {}
 
   ngOnInit(): void {
-    this.loadCart()  
+    this.loadCart();
   }
 
-  removeItemFromCart(id: number | string): void{
+  removeItemFromCart(id: number | string): void {
     this.cartDataService.removeItemFromCart(id);
     this.loadCart();
   }
 
-  increaseItemQuantity(id: number | string): void{
+  increaseItemQuantity(id: number | string): void {
     this.cartDataService.increaseItemQuantity(id);
     this.loadCart();
   }
 
-  decreaseItemQuantity(id: number | string): void{
+  decreaseItemQuantity(id: number | string): void {
     this.cartDataService.decreaseItemQuantity(id);
     this.loadCart();
   }
 
-  getCartTotal(): number{
+  getCartTotal(): number {
     return this.cartDataService.getCartTotal();
   }
 
@@ -40,17 +43,16 @@ constructor(private cartDataService: CartDataService, private isUserLoggedInServ
     return this.cartDataService.isCartEmpty();
   }
 
-  checkout(): void{
+  checkout(): void {
     this.cartDataService.cartCheckout();
     this.loadCart();
   }
 
-  private loadCart(): void{
+  private loadCart(): void {
     this.cart = this.cartDataService.getCartItems();
   }
 
-  isUserLoggedIn(): boolean{
+  isUserLoggedIn(): boolean {
     return this.isUserLoggedInService.isUserLoggedIn;
   }
-
 }
