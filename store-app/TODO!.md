@@ -4,11 +4,7 @@
 - profile page
   - add loader on image in tables
 
-- 404 page
-
 - Documentation
-
-- About Page - Text
 
 - General error service - if any unhanded error - go to 404!
 
