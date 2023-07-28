@@ -1,6 +1,6 @@
 import { OrderItem } from "./orderItem";
 
-export type UserCart = {
+export interface UserCart {
     userId: string;
     cartItems: OrderItem[] 
 }

@@ -1,12 +1,5 @@
-
 - Shopping Cart - Dynamic #3 - TO DO
   - add loader on image or on the whole page
-
-
-- Profile Page - Dynamic #5 - TO DO
-  - see email
-  - see username
-  - see list of orders
 
 - add guards
 
@@ -19,7 +12,8 @@
 - General error service - if any unhanded error - go to 404!
 
 Good to haves:
- Checkout Page - Dynamic #4:
+
+- Checkout Page - Dynamic #4:
   - View Order - without being able to change it
   - Add Delivery Address - one form
 

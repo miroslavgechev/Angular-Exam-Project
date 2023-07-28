@@ -14,6 +14,22 @@ export class UtilityService {
     }
   }
 
+  getUserUsername(): string | null{
+    if (localStorage.getItem('curatedUser') === null) {
+      return null;
+    } else {
+      return JSON.parse(localStorage.getItem('curatedUser')!).username;
+    }
+  }
+
+  getUserEmail(): string | null{
+    if (localStorage.getItem('curatedUser') === null) {
+      return null;
+    } else {
+      return JSON.parse(localStorage.getItem('curatedUser')!).email;
+    }
+  }
+
   isArrayEmpty(array: any[] | null): boolean {
     if (array === null) {
       return true;

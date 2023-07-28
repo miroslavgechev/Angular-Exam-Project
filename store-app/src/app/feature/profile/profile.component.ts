@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderDataService } from '../order-data.service';
 import { Order } from 'src/app/types/order';
+import { UtilityService } from 'src/app/shared/services/utility.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,15 +10,21 @@ import { Order } from 'src/app/types/order';
 })
 export class ProfileComponent implements OnInit {
   orders: Order[] | null = null;
+  userEmail: string | null = null;
+  userUsername: string | null = null;
 
-  constructor(private orderDataService: OrderDataService) {}
+
+  constructor(private orderDataService: OrderDataService, private utilityService: UtilityService) {}
 
   ngOnInit(): void {
     this.loadProfile();
     this.loadOrders();
   }
 
-  loadProfile() {}
+  loadProfile() {
+    this.userEmail = this.utilityService.getUserEmail();
+    this.userUsername = this.utilityService.getUserUsername();
+  }
 
   loadOrders() {
     this.orderDataService.getOrdersForLoggedUser().subscribe({
