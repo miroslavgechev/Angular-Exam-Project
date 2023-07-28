@@ -35,10 +35,6 @@ constructor(private cartDataService: CartDataService) { }
     return this.cartDataService.getCartTotal();
   }
 
-  // getUserCredit(): number{
-  //   return this.cartDataService.getUserCredit();
-  // }
-
   isCartEmpty(): boolean {
     return this.cartDataService.isCartEmpty();
   }

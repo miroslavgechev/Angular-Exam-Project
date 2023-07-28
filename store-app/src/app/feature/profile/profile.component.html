@@ -15,40 +15,65 @@
             </p>
         </div>
 
-        <h2>Orders</h2>
-        <div class="list">
-            <div class="order-date">
-                <p>27.07.2023</p>
-            </div>
-            <div class="order-items">
-                <div class="cart-item">
-                    <div class="cart-item-image">
-                        <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117994&authkey=%21AMJxTA6B52ni3kg&width=500&height=501"
-                            alt="Air Purifier">
-                    </div>
+        
+        <h2>Order History</h2>
 
-                    <div class="cart-item-data">
-                        <p class="quantity">Blueair Blue Pure 211+ Auto</p>
-                        <p class="quantity">1</p>
-                        <p class="total-price">299 EUR</p>
-                    </div>
-                </div>
-
-                <div class="cart-item">
-                    <div class="cart-item-image">
-                        <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117994&authkey=%21AMJxTA6B52ni3kg&width=500&height=501"
-                            alt="Air Purifier">
-                    </div>
-
-                    <div class="cart-item-data">
-                        <p class="quantity">Blueair Blue Pure 211+ Auto</p>
-                        <p class="quantity">1</p>
-                        <p class="total-price">299 EUR</p>
-                    </div>
-                </div>
-            </div>
+        <div *ngIf="isOrderListEmpty()" class="no-orders">
+            <p>You have no orders yet.</p>
         </div>
 
+        <div *ngIf="!isOrderListEmpty()" class="list list-orders">
+            <div class="order" *ngFor="let order of orders; let i = index">
+                <div class="order-date">
+                    <p>Order date: <span>{{order.orderDate | date:'dd.MM.yyyy HH:mm'}}</span></p>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Model</th>
+                            <th>Q-ty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of order.items">
+                            <td>
+                                <div class="order-item-image">
+                                    <img src={{item.imageUrl}}
+                                        alt="Air Purifier">
+                                </div>
+                            </td>
+                            <td>
+                                <p class="item">{{item.model}}</p>
+                            </td>
+                            <td>
+                                <p class="item">{{item.quantity}}</p>
+                            </td>
+                            <td>
+                                <p class="item">{{item.unitPriceInEur * item.quantity | currency: 'EUR' : 'symbol' :'1.0-2'}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="item"></p>
+                            </td>
+                            <td>
+                                <p class="item"></p>
+                            </td>
+                            <td>
+                                <p class="item">Total:</p>
+                            </td>
+                            <td>
+                                <p class="item">{{getOrdetTotal(i) | currency: 'EUR' : 'symbol' :'1.0-2'}}</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
 
 
     </div>

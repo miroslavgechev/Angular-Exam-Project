@@ -24,4 +24,8 @@ export class ApiService {
   postOrder(order: Order) {
     return this.http.post<Order>(`${ORDERS_API_URL}${API_URL_EXT}`, order);
   }
+
+  getOrders() {
+    return this.http.get<Order[]>(`${ORDERS_API_URL}${API_URL_EXT}`);
+  }
 }

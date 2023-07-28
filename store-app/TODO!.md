@@ -1,23 +1,7 @@
-- Product Details Page - Dynamic #2
-  - //!!!!!!!!!!!!!!!! TO ADD - GO TO ERROR PAGE!!!!!! if error (e.g. id doesn't exist)
 
 - Shopping Cart - Dynamic #3 - TO DO
   - add loader on image or on the whole page
-  - error handling - if address is not filled in
-  - integrate strype test payment system
 
-- Login page - add address for user?
-- Login page - add phone number for user?
-
-- Checkout Page - Dynamic #4:
-  - View Order - without being able to change it
-  - Add Delivery Address - one form
-
-  - Pay
-
-  - Push to order history
-  - Clear cart
-  - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 
 - Profile Page - Dynamic #5 - TO DO
   - see email
@@ -32,7 +16,19 @@
 
 - About Page - Text
 
+- General error service - if any unhanded error - go to 404!
+
 Good to haves:
+ Checkout Page - Dynamic #4:
+  - View Order - without being able to change it
+  - Add Delivery Address - one form
+
+  - Pay
+
+  - Push to order history
+  - Clear cart
+  - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+
 - Take the loader into features to a service.
 
 - move constants to shared folder
@@ -52,5 +48,7 @@ Good to haves:
 - if cart has items - update cart icon
 
 - optimize card data service
+
+- implement momento for order dates (time since...)
 
 - put in production
