@@ -6,13 +6,14 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { DetailsComponent } from './details/details.component';
 import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuthUsersGuard } from '../shared/guards/auth.guard';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'catalog', component: CatalogComponent },
   { path: 'details/:id', component: DetailsComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthUsersGuard] },
 ];
 
 @NgModule({

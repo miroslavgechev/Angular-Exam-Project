@@ -55,9 +55,15 @@
                 </div>
 
                 <div class="cart-checkout">
-                    <div (click)="checkout()" class="buy-btn">
+
+                    <div (click)="checkout()" class="buy-btn" *ngIf="isUserLoggedIn()">
                         <a>Checkout</a>
                     </div>
+
+                    <div routerLink="/signin" class="buy-btn" *ngIf="!isUserLoggedIn()">
+                        <a>Checkout</a>
+                    </div>
+
                     <p class="free-shipping">Shipment is free!
                     <p>
                 </div>

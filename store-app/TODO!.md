@@ -1,7 +1,8 @@
 - Shopping Cart - Dynamic #3 - TO DO
   - add loader on image or on the whole page
 
-- add guards
+- profile page
+  - add loader on image in tables
 
 - 404 page
 
@@ -10,6 +11,8 @@
 - About Page - Text
 
 - General error service - if any unhanded error - go to 404!
+
+- code cleanup and optimization
 
 Good to haves:
 
@@ -21,7 +24,7 @@ Good to haves:
 
   - Push to order history
   - Clear cart
-  - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+  - order history - TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - Take the loader into features to a service.
 
@@ -46,3 +49,5 @@ Good to haves:
 - implement momento for order dates (time since...)
 
 - put in production
+
+- add add-on so user can be redirected to his/her last page after sign-in
