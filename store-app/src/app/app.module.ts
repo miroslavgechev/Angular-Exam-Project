@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,11 +8,10 @@ import { FeatureModule } from './feature/feature.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './auth/auth.module';
 import { appInterceptorProvider } from './shared/interceptors/api.interceptor';
+import { GlobalErrorHandlerService } from './shared/services/global-error-handler.service';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -21,7 +20,13 @@ import { appInterceptorProvider } from './shared/interceptors/api.interceptor';
     AuthModule,
     AppRoutingModule,
   ],
-  providers: [appInterceptorProvider],
-  bootstrap: [AppComponent]
+  providers: [
+    appInterceptorProvider,
+    {
+      provide: ErrorHandler,
+      useClass: GlobalErrorHandlerService,
+    },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

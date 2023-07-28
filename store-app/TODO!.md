@@ -10,6 +10,9 @@
 
 - code cleanup and optimization
 
+
+
+
 Good to haves:
 
 - Checkout Page - Dynamic #4:
