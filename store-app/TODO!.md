@@ -1,6 +1,3 @@
-- Shopping Cart - Dynamic #3 - TO DO
-  - add loader on image or on the whole page
-
 - profile page
   - add loader on image in tables
 
@@ -41,3 +38,7 @@ Good to haves:
 - put in production
 
 - add add-on so user can be redirected to his/her last page after sign-in
+
+- catalog - add pseudo element if catalog items 4th
+
+- code improvements - repetitive code?.toService

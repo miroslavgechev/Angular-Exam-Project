@@ -17,7 +17,11 @@
 
                 <div class="cart-item" *ngFor="let item of cart; let i = index">
                     <div class="cart-item-image">
-                        <img src="{{item.imageUrl}}" alt="Air Purifier">
+                        <img src="{{item.imageUrl}}" (load)="onImageLoad(i)" alt="Air Purifier">
+                    </div>
+
+                    <div class="image-loader" *ngIf="!imageLoaded[i]">
+                        <app-loader-small></app-loader-small>
                     </div>
 
                     <div class="cart-item-details">

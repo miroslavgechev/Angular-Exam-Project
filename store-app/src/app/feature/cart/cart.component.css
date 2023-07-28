@@ -29,6 +29,14 @@
     width: 100%;
     padding: 0.2em;
     border-bottom: 1px solid rgb(174, 172, 172);
+    position: relative;
+}
+
+.image-loader {
+    position: absolute;
+    left: 8%;
+    top: 28%;
+    translate: transform(-50%, -50%);
 }
 
 .cart-item-image img {
@@ -201,3 +209,4 @@ p.cart-error a {
 p.cart-error a:hover {
     color: rgba(255, 0, 0, 0.5);
 }
+

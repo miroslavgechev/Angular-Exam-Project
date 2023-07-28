@@ -10,6 +10,7 @@ import { IsUserLoggedInService } from 'src/app/shared/services/is-user-logged-in
 })
 export class CartComponent implements OnInit {
   cart: OrderItem[] | null | undefined;
+  imageLoaded: boolean[] = [];
 
   constructor(
     private cartDataService: CartDataService,
@@ -18,6 +19,10 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadCart();
+  }
+
+  onImageLoad(index: number) {
+    this.imageLoaded[index] = true;
   }
 
   removeItemFromCart(id: number | string): void {
@@ -50,6 +55,12 @@ export class CartComponent implements OnInit {
 
   private loadCart(): void {
     this.cart = this.cartDataService.getCartItems();
+
+    if (this.cart !== null) {
+      for (let i = 0; i < this.cart?.length; i++) {
+        this.imageLoaded.push(false);
+      }
+    }
   }
 
   isUserLoggedIn(): boolean {
