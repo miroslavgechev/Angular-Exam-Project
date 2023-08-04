@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { OrderItem } from 'src/app/types/orderItem';
 
 @Injectable({
   providedIn: 'root',
@@ -27,6 +28,14 @@ export class UtilityService {
       return null;
     } else {
       return JSON.parse(localStorage.getItem('curatedUser')!).email;
+    }
+  }
+  
+  getCartItems(): OrderItem[] | null {
+    if (localStorage.getItem('curatedCart') === null) {
+      return null;
+    } else {
+      return JSON.parse(localStorage.getItem('curatedCart')!);
     }
   }
 

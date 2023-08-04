@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { ApiService } from '../shared/services/api.service';
 import { UtilityService } from '../shared/services/utility.service';
 import { OrderDataService } from './order-data.service';
+import { IsCartEmptyService } from '../shared/services/is-cart-empty.service';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,8 @@ export class CartDataService {
     private router: Router,
     private apiService: ApiService,
     private orderDataService: OrderDataService,
-    private utilityService: UtilityService
+    private utilityService: UtilityService,
+    private isCartEmptyService: IsCartEmptyService
   ) {}
 
   addItemToCart(item: DetailedCard) {
@@ -93,11 +95,7 @@ export class CartDataService {
   }
 
   getCartItems(): OrderItem[] | null {
-    if (localStorage.getItem('curatedCart') === null) {
-      return null;
-    } else {
-      return JSON.parse(localStorage.getItem('curatedCart')!);
-    }
+    return this.utilityService.getCartItems();
   }
 
   getCartTotal(): number {
@@ -140,9 +138,7 @@ export class CartDataService {
   }
 
   isCartEmpty(): boolean {
-    const currentCart = this.getCartItems();
-
-    return this.utilityService.isArrayEmpty(currentCart);
+    return this.isCartEmptyService.isCartEmpty();
   }
 
   createCartItem(item: DetailedCard): OrderItem {

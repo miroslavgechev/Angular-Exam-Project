@@ -5,7 +5,8 @@
         </div>
 
         <div class="nav-shopping-cart">
-            <a routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <a *ngIf="isCartEmpty()" routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <a *ngIf="!isCartEmpty()" routerLink="/cart"><i class="fa-solid fa-cart-plus"></i> Cart</a>            
         </div>
 
         <div class="nav-menu">
@@ -18,3 +19,4 @@
         </div>
     </nav>
 </header>
+

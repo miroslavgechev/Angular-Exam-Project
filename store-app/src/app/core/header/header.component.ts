@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { SignOutService } from 'src/app/auth/sign-out.service';
+import { IsCartEmptyService } from 'src/app/shared/services/is-cart-empty.service';
 import { IsUserLoggedInService } from 'src/app/shared/services/is-user-logged-in.service';
 
 @Component({
@@ -15,10 +16,17 @@ export class HeaderComponent {
 
   constructor(
     private isUserLoggedInService: IsUserLoggedInService,
-    private signOutService: SignOutService
+    private signOutService: SignOutService,
+    private isCartEmptyService: IsCartEmptyService
   ) {}
 
   logout() {
     this.signOutService.logout();
   }
+
+  isCartEmpty(): boolean{
+    return this.isCartEmptyService.isCartEmpty();
+  }
+
 }
+
