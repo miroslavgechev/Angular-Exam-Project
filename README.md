@@ -32,98 +32,122 @@
 - Firebase Realtime Database (with REST API)
 - Third-party librarires
 
-## Code Structure
+# Code Structure
 
-Core Module
-|__ Header Component
-|__ Footer Component
-|__ PageNotFound Component
+## Modules
 
-app/
-The app directory contains the main components and features of the application.
+### Auth Module
 
-auth/: Contains authentication-related components and logic.
+The `AuthModule` handles authentication-related features in the application.
 
-sign-in/: Contains the sign-in component and related files.
-sign-up/: Contains the sign-up component and related files.
-validators/: Contains custom form validators.
-core/: Holds the core components that are used throughout the application.
+#### Components
 
-footer/: Contains the footer component.
-header/: Contains the header component.
-page-not-found/: Contains the page-not-found component for handling 404 errors.
-feature/: Contains different features of the application.
+- `SignInComponent`: Responsible for user sign-in functionality.
+- `SignUpComponent`: Handles user registration functionality.
 
-about/: Contains the about feature component and files.
-cart/: Contains the cart feature component and files.
-catalog/: Contains the catalog feature component and files.
-details/: Contains the details feature component and files.
-profile/: Contains the profile feature component and files.
-shared/: Contains shared modules, services, and utilities.
+#### Services
 
-guards/: Contains route guards for protecting routes.
-interceptors/: Contains HTTP interceptors for handling requests and responses.
-loader/: Contains the loader component for displaying loading indicators.
-loader-small/: Contains a smaller version of the loader component.
-pipes/: Contains custom pipes for data transformation.
-services/: Contains shared services used across different components.
-types/: Contains TypeScript type definitions and interfaces.
+- `AuthService`: Provides methods for authentication, login, and registration.
+- `SignOutService`: Handles user sign-out functionality.
 
-assets/
-The assets directory holds static assets like images, fonts, etc. (Note: This folder is empty as indicated by .gitkeep.)
+#### Validators
 
-css/
-The css directory contains global CSS files for styling the application.
+- `EmailValidator`: Custom validator to validate email input.
+- `PasswordMatchValidator`: Custom validator to validate password match.
 
-The project structure provides a clear organization of components, services, and utilities into their respective directories. It also includes specific directories for authentication, core components, features, shared functionalities, and TypeScript types. The assets and css directories contain global resources used throughout the application.
+## Core Module
 
-# Bonus Requirements:
-* Deploy the application in a cloud environment
-* Use a file storage cloud API, e.g. Dropbox, Google Drive or other for storing the files.
-* Use of features of HTML 5 like Geolocation, SVG, Canvas, etc.
-* Use Angular Animations somewhere in your application
-* Write unit tests for your components
-* Use RxJS powered state management for Angular applications, inspired by Redux (ngRx store)
-* Anything that is not described in the assignment is a bonus if it has some practical use.
+The `CoreModule` contains core components and services used throughout the application.
 
-# Applicaton
+#### Components
 
-## Application Type
-Store for Curated Air Purifiers
+- `FooterComponent`: Renders the footer of the application.
+- `HeaderComponent`: Renders the header of the application.
+- `PageNotFoundComponent`: Renders the 404 error page.
 
-## Public Pages
-* Home - Catalog Page - Dynamic #1
-    - All Products;
-    - Product Name;
-    - Product Price;
+## Feature Module
 
-* Login
-    - email
-    - password
-    
-* Register
-    - email
-    - password
-    - repeat password
+The `FeatureModule` contains different features of the application.
 
-* About Page
+### About Feature
 
-## Private Pages
 
-* Product Details Page - Dynamic #2
-    - Product Name;
-    - Product Description;
-    - Product Price;
-    - Add-to-cart Button;
+#### Components
 
-* Shopping Cart - Dynamic #3
-    - All added to cart products;
-    - Product Name (with link to product);
-    - Product Q-ty (update field);
-    - Total Price;
-    - Del;
+- `AboutComponent`: Renders information about the application.
 
-* Profile Page - Dynamic #4
-    - add delivery address;
-    - add funds;
-    - order history
+### Cart Feature
+
+#### Components
+
+- `CartComponent`: Displays the items in the user's shopping cart.
+
+#### Services
+
+- `CartDataService`: Manages cart data and operations.
+
+### Catalog Feature
+
+#### Components
+
+- `CatalogComponent`: Displays the catalog of products available.
+
+### Details Feature
+
+#### Components
+
+- `DetailsComponent`: Displays details of a selected product.
+
+### Profile Feature
+
+#### Components
+
+- `ProfileComponent`: Displays user profile information.
+
+## Shared Module
+
+The `SharedModule` contains shared components, directives, pipes, and services.
+
+#### Guards
+
+- `AuthGuard`: Protects routes that require authentication.
+- `NotAuthGuard`: Protects routes that should not be accessible to authenticated users.
+
+#### Interceptors
+
+- `ApiInterceptor`: Handles HTTP requests and responses.
+
+#### Components
+
+- `LoaderComponent`: Displays a loading indicator during asynchronous operations.
+- `LoaderSmallComponent`: A smaller version of the loader component.
+
+#### Directives
+
+- `OnMouseHoverDirective`: Adds functionality on mouse hover.
+
+#### Pipes
+
+- `ElapsedTimePipe`: Converts a date into elapsed time.
+
+#### Services
+
+- `ApiService`: Handles API calls.
+- `GlobalErrorHandlerService`: Handles global error handling.
+- `IsCartEmptyService`: Checks if the cart is empty.
+- `IsUserLoggedInService`: Checks if the user is logged in.
+- `PreviousUrlService`: Keeps track of the previous URL.
+- `UtilityService`: Contains utility methods.
+
+## Types
+
+The `Types` folder contains TypeScript type definitions and interfaces used in the application.
+
+## Assets
+
+The `Assets` folder holds static assets like images, fonts, etc.
+
+## CSS
+
+The `CSS` folder contains global CSS files for styling the application.
+
