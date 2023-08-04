@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { User } from '../types/user';
-import { API_URL_EXT, USER_API_URL } from 'src/constants';
+import { API_URL_EXT, USER_API_URL } from 'src/app/shared/constants';
 import { CartDataService } from '../feature/cart-data.service';
 
 @Injectable({

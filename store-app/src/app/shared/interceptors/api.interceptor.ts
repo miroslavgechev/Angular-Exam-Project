@@ -7,7 +7,7 @@ import {
   HTTP_INTERCEPTORS,
 } from '@angular/common/http';
 import { Observable, catchError } from 'rxjs';
-import { API_URL } from 'src/constants';
+import { API_URL } from 'src/app/shared/constants';
 import { Router } from '@angular/router';
 
 @Injectable()
