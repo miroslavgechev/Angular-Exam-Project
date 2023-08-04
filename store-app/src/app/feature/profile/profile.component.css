@@ -131,3 +131,7 @@ tbody tr td:first-child {
     top: 15%;
     translate: transform(-50%, -50%);
 }
+
+.elapsed-time{
+    font-style: italic;
+}

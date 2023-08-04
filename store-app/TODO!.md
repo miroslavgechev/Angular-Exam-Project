@@ -15,13 +15,9 @@ Good to haves:
 
 - Optional: add pipe for descriptions on main page, reduce to 100 symbols.
 
-- Create a page where admins can add products
-
 - if cart has items - update cart icon
 
 - optimize card data service
-
-- implement moments for order dates (time since...)
 
 - put in production
 
