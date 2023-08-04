@@ -1,0 +1,164 @@
+[
+  {
+    "curatedName": "Best For Most People",
+    "description": "The best air purifier overall in our tests, we recommend this model above all others because it gets the job done quickly and efficiently, saves energy and works well in large spaces.",
+    "id": 0,
+    "imageCatalogHoverUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117996&authkey=%21ACVux-1AnRPkBM8&width=1000&height=1000",
+    "imageCatalogUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117994&authkey=%21AMJxTA6B52ni3kg&width=500&height=501",
+    "imageDetailsUrl": [
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117996&authkey=%21ACVux-1AnRPkBM8&width=1000&height=1000",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117998&authkey=%21AGz-BjY-XoRk4Sw&width=1024&height=999999",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118026&authkey=%21AHMBuieU5PMMBfU&width=700&height=700"
+    ],
+    "model": "Blueair Blue Pure 211+ Auto",
+    "priceInEur": 299,
+    "specs": {
+      "cadrDust": 347,
+      "cadrPollen": 380,
+      "cadrSmoke": 353,
+      "dimensionsHeightInCm": 50,
+      "dimensionsLengthInCm": 33,
+      "dimensionsWidthInCm": 33,
+      "energyUseKwh": 0.159,
+      "filters": [
+        "Particle",
+        "Carbon",
+        "HEPASilent"
+      ],
+      "noiseLevelMax": 60.8,
+      "noiseLevelMin": 35.6,
+      "roomSizeInM2": 50,
+      "weightInKg": 5.5
+    },
+    "isActive": true
+  },
+  {
+    "curatedName": "Best Value For A Large Room",
+    "description": "The perfect option if you're shopping on a budget, but need an air purifier which can handle a large space. While it’s not exactly pretty, it will get the job done.",
+    "id": 1,
+    "imageCatalogHoverUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117999&authkey=%21AOZS5UOC9fDUHOY&width=800&height=800",
+    "imageCatalogUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118001&authkey=%21AALsrPdmlm5Sm3o&width=1024&height=999999",
+    "imageDetailsUrl": [
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2117999&authkey=%21AOZS5UOC9fDUHOY&width=800&height=800",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118000&authkey=%21ANKaifuHYkLmkN0&width=1024&height=999999",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118002&authkey=%21AMBO_tuWXg0wMTc&width=1024&height=999999"
+    ],
+    "model": "Honeywell HPA 300",
+    "priceInEur": 259,
+    "specs": {
+      "cadrDust": 320,
+      "cadrPollen": 300,
+      "cadrSmoke": 300,
+      "dimensionsHeightInCm": 57,
+      "dimensionsLengthInCm": 50,
+      "dimensionsWidthInCm": 28,
+      "energyUseKwh": 1.002,
+      "filters": [
+        "Hepa",
+        "Activated Carbon Pre-Filter"
+      ],
+      "noiseLevelMax": 59.6,
+      "noiseLevelMin": 41,
+      "roomSizeInM2": 45,
+      "weightInKg": 8
+    },
+    "isActive": true
+  },
+  {
+    "curatedName": "Best Value For A Small Room",
+    "description": "This compact air purifier is ideal for rooms up to 190 sq ft. It’s simple to set up and great value for money considering how efficiently it cleans the air.",
+    "id": 2,
+    "imageCatalogHoverUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118005&authkey=%21AO2AnKGjtdVjsMw&width=1024&height=999999",
+    "imageCatalogUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118004&authkey=%21ALZL_cr-tXIOl-w&width=400&height=446",
+    "imageDetailsUrl": [
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118005&authkey=%21AO2AnKGjtdVjsMw&width=1024&height=999999",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118007&authkey=%21AFq2IJUEcnyMkyQ&width=1024&height=999999",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118006&authkey=%21AChbCqdvLh3tBcI&width=894&height=894"
+    ],
+    "model": "Blueair Blue Pure 411 Auto",
+    "priceInEur": 199,
+    "specs": {
+      "cadrDust": 107,
+      "cadrPollen": 96,
+      "cadrSmoke": 123,
+      "dimensionsHeightInCm": 43,
+      "dimensionsLengthInCm": 20,
+      "dimensionsWidthInCm": 20,
+      "energyUseKwh": 0.154,
+      "filters": [
+        "Pre-filer",
+        "HEPASilent",
+        "Carbon"
+      ],
+      "noiseLevelMax": 51.6,
+      "noiseLevelMin": 32.5,
+      "roomSizeInM2": 18,
+      "weightInKg": 1.7
+    },
+    "isActive": true
+  },
+  {
+    "curatedName": "Best Smart Features",
+    "description": "The best air purifier for anyone who wants smart connectivity and remote control via an app. There's a useful LCD screen built into the device itself.",
+    "id": 3,
+    "imageCatalogHoverUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118009&authkey=%21AP94eypSrPR6Sak&width=999999&height=1024",
+    "imageCatalogUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118008&authkey=%21ABBWUnNa7KW33k8&width=475&height=475",
+    "imageDetailsUrl": [
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118009&authkey=%21AP94eypSrPR6Sak&width=999999&height=1024",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118010&authkey=%21ACUl7J1pUa7vPAM&width=999999&height=1024",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118011&authkey=%21AMkWJDWywoXHlvw&width=1000&height=1000"
+    ],
+    "model": "Blueair HealthProtect 7470i",
+    "priceInEur": 799,
+    "specs": {
+      "cadrDust": 275,
+      "cadrPollen": 280,
+      "cadrSmoke": 270,
+      "dimensionsHeightInCm": 70,
+      "dimensionsLengthInCm": 30,
+      "dimensionsWidthInCm": 30,
+      "energyUseKwh": 0.241,
+      "filters": [
+        "HEPASilent Ultra"
+      ],
+      "noiseLevelMax": 48,
+      "noiseLevelMin": 35.3,
+      "roomSizeInM2": 39,
+      "weightInKg": 12.5
+    },
+    "isActive": true
+  },
+  {
+    "curatedName": "Best For Saving Energy",
+    "description": "Small and compact in stature, this air purifier comes with a useful eco setting which will keep energy costs low. It provides a decent clean air delivery rate (CADR) as well.",
+    "id": 4,
+    "imageCatalogHoverUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118014&authkey=%21AMShHXUDVlscNHA&width=1024&height=999999",
+    "imageCatalogUrl": "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118012&authkey=%21ADWHzDfWROB9PfY&width=500&height=500",
+    "imageDetailsUrl": [
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118014&authkey=%21AMShHXUDVlscNHA&width=1024&height=999999",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118013&authkey=%21ACTL0peXvjMGKn0&width=1024&height=999999",
+      "https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2118015&authkey=%21AAsAUHqtHgkKF0o&width=640&height=427"
+    ],
+    "model": "Coway Airmega AP-1512HH",
+    "priceInEur": 399,
+    "specs": {
+      "cadrDust": 232,
+      "cadrPollen": 241,
+      "cadrSmoke": 248,
+      "dimensionsHeightInCm": 47,
+      "dimensionsLengthInCm": 25,
+      "dimensionsWidthInCm": 43,
+      "energyUseKwh": 0.082,
+      "filters": [
+        "Pre-filer",
+        "Carbon filter",
+        "True HEPA"
+      ],
+      "noiseLevelMax": 58.3,
+      "noiseLevelMin": 36.8,
+      "roomSizeInM2": 34,
+      "weightInKg": 5.6
+    },
+    "isActive": true
+  }
+]

@@ -16,8 +16,8 @@ export class CatalogComponent implements OnInit {
   ngOnInit(): void {
     this.apiService.getCatalog().subscribe({
       next: (cards) => {
-        this.cardsList = cards;
-
+        this.cardsList = cards.filter((card) => card!== null);
+        
         for (let i = 0; i < this.cardsList.length; i++) {
           this.imageLoaded.push(false);
         }
