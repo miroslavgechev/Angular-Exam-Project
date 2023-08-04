@@ -26,9 +26,13 @@
 3. Run `ng serve` for a dev server.
 4. Navigate to `http://localhost:4200/` in your browser.
 
-## Usage
+## SoftUni Requirements vs Implementation
 
-Explain how to use your application.
+| Column 1 | Column 2 |
+|----------|----------|
+| Item 1   | Item 2   |
+| Item 3   | Item 4   |
+
 
 ## Issues
 
@@ -100,21 +104,3 @@ Store for Curated Air Purifiers
     - add delivery address;
     - add funds;
     - order history
-
-* Logout Btn
-
-# Version 2:
-* Profile Page:
-    - Add Payment Method /in a field -> future integration with payment system/ 
-
-* Comparisson Function
-
-* Checkout Function - Dynamic #5
-    - List all products as text;
-    - Add delivery address;
-    - Choose delivery options;
-    - Pay;
-    - Integration with Payment System;
-
-* Create Page
-    - Page seeable only by admin for adding new products to the site.
