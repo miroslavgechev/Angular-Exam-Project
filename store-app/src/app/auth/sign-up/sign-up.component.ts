@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { passwordMatchValidator } from '../validators/password-match-validator';
 import { AuthService } from '../auth.service';
-import { Router } from '@angular/router';
 import { emailValidator } from '../validators/email-validator';
+import { PreviousUrlService } from 'src/app/shared/services/previous-url.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -27,7 +27,7 @@ export class SignUpComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private router: Router
+    private previousUrlService: PreviousUrlService
   ) {}
 
   ngOnInit(): void {
@@ -42,8 +42,8 @@ export class SignUpComponent implements OnInit {
     const { email, passGroup } = this.form.value;
     this.isEmailTaken = this.authService.register(email!, passGroup!.password!);
 
-    if(!this.isEmailTaken){
-      this.router.navigate(['/']);
+    if (!this.isEmailTaken) {
+      this.previousUrlService.navigateToPreviousUrl();
     }
   }
 }

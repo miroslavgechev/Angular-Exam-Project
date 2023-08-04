@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OrderItem } from 'src/app/types/orderItem';
 import { CartDataService } from '../cart-data.service';
 import { IsUserLoggedInService } from 'src/app/shared/services/is-user-logged-in.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -14,7 +15,7 @@ export class CartComponent implements OnInit {
 
   constructor(
     private cartDataService: CartDataService,
-    private isUserLoggedInService: IsUserLoggedInService
+    private isUserLoggedInService: IsUserLoggedInService,
   ) {}
 
   ngOnInit(): void {
@@ -66,4 +67,5 @@ export class CartComponent implements OnInit {
   isUserLoggedIn(): boolean {
     return this.isUserLoggedInService.isUserLoggedIn;
   }
+
 }

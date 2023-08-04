@@ -73,7 +73,6 @@ export class AuthService {
   private removeUser(): void {
     localStorage.removeItem('curatedUser')
     this.cartDataService.clearCart();
-
   }
 
   private formUserInJSON(email: string, password: string): User {

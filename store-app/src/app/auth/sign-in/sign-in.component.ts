@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
-import { Router } from '@angular/router';
+import { PreviousUrlService } from 'src/app/shared/services/previous-url.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -23,7 +23,7 @@ export class SignInComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private router: Router
+    private previousUrlService: PreviousUrlService
   ) {}
 
   login(): void {
@@ -35,7 +35,7 @@ export class SignInComponent implements OnInit {
     this.areCredentialsCorrect = this.authService.login(email!, password!);
 
     if (this.areCredentialsCorrect) {
-      this.router.navigate(['/']);
+      this.previousUrlService.navigateToPreviousUrl();
     }
   }
 }

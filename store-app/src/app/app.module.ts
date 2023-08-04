@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './auth/auth.module';
 import { appInterceptorProvider } from './shared/interceptors/api.interceptor';
 import { GlobalErrorHandlerService } from './shared/services/global-error-handler.service';
+import { PreviousUrlService } from './shared/services/previous-url.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { GlobalErrorHandlerService } from './shared/services/global-error-handle
       provide: ErrorHandler,
       useClass: GlobalErrorHandlerService,
     },
+    PreviousUrlService
   ],
   bootstrap: [AppComponent],
 })
