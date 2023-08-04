@@ -1,4 +1,4 @@
-- Documentation
+- Documentation - add screenshots
 
 Good to haves:
 
@@ -18,3 +18,7 @@ Good to haves:
 - Registered Successfully / Login successfully - add a message with timeout
 
 - put in production
+
+- add customer reviews?
+
+- update user order - to show status, default status is pending/delivered

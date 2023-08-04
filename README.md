@@ -1,3 +1,43 @@
+# Project Name
+#CuratedPurifiers Store
+
+## Description
+
+#CuratedPurifiers is an online store that offers a curated range of indoor air purifiers to enhance the indoor air quality and provide a healthy living environment. The platform allows users to signuo and signin, providing a personalized shopping experience. Users can browse through the curated collection of purifiers, view detailed product information, add items to their cart, checkout, and see placed orders.
+
+
+## Features
+
+- User Authentication: Registration and login functionality for personalized access to the store.
+- Product Catalog: A well-curated selection of indoor air purifiers.
+- Product Details: Detailed information and specifications and image for each purifier.
+- Shopping Cart: Users can add multiple items to their cart and review their selections before checkout.
+- Checkout Process: dummy checkout process, ready made for integration with a payment gateway.
+- Order History: Users can view a list of all their placed orders with order details and statuses.
+
+## Screenshots
+
+(Screenshots - to add)
+
+## Installation
+
+1. Clone the repository.
+2. Run `npm install` to install the dependencies.
+3. Run `ng serve` for a dev server.
+4. Navigate to `http://localhost:4200/` in your browser.
+
+## Usage
+
+Explain how to use your application.
+
+## Issues
+
+If you encounter any issues or have questions, please file an issue at [GitHub Issues](https://github.com/github_username/repo_name/issues).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 # angular-exam-project
 Angular Project
 
@@ -6,8 +46,6 @@ Angular Project
 * At least 3 different dynamic pages (pages like about, contacts, login, register do not count towards that figure). If your project doesn’t cover this condition you will not be graded.
 * Use Angular for the client-side
 * Communicate to a remote service (via REST, sockets, GraphQL, or a similar client-server technique).
-* Implement authentication
-* Use a source control system like GitHub, Bitbucket etc. Commit inside the repository for at least 3 days.
 * Apply error handling and data validation to avoid crashes when invalid data is entered
 * Brief documentation on the project and project architecture (as .md file)
 * Good usability. Good UI and UX. (NGBootstrap, MDL, CSS Grids or another method of your choice)
