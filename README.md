@@ -30,7 +30,7 @@
 - TypeScript
 - HTML/CSS
 - Firebase Realtime Database (with REST API)
-- Third-party librarires
+- Third-party libraries
 
 # Code Structure
 
