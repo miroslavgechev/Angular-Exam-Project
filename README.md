@@ -32,9 +32,9 @@
 - Firebase Realtime Database (with REST API)
 - Third-party librarires
 
-## Code Structure
+# Code Structure
 
-### Auth Module
+## Auth Module
 
 The `AuthModule` handles authentication-related features in the application.
 
@@ -53,7 +53,7 @@ The `AuthModule` handles authentication-related features in the application.
 - `EmailValidator`: Custom validator to validate email input.
 - `PasswordMatchValidator`: Custom validator to validate password match.
 
-### Core Module
+## Core Module
 
 The `CoreModule` contains core components and services used throughout the application.
 
@@ -63,7 +63,7 @@ The `CoreModule` contains core components and services used throughout the appli
 - `HeaderComponent`: Renders the header of the application.
 - `PageNotFoundComponent`: Renders the 404 error page.
 
-### Feature Module
+## Feature Module
 
 The `FeatureModule` contains different features of the application.
 
@@ -82,7 +82,7 @@ The `FeatureModule` contains different features of the application.
 #### Directives
 - `OnMouseHoverDirective`: Adds functionality on mouse hover.
 
-### Shared Module
+## Shared Module
 The `SharedModule` contains shared components, directives, pipes, and services.
 
 #### Guards
@@ -112,15 +112,18 @@ The `SharedModule` contains shared components, directives, pipes, and services.
 - `PreviousUrlService`: Keeps track of the previous URL.
 - `UtilityService`: Contains utility methods.
 
-### Types
+#### Constants
+- `Constants`: Contains application constants.
+
+## Types
 
 The `Types` folder contains TypeScript type definitions and interfaces used in the application.
 
-### Assets
+## Assets
 
 The `Assets` folder holds static assets like images, fonts, etc.
 
-### CSS
+## CSS
 
 The `CSS` folder contains global CSS files for styling the application.
 
