@@ -28,11 +28,15 @@
 
 ## SoftUni Requirements vs Implementation
 
-| Column 1 | Column 2 |
+| Requirements | Implementation |
 |----------|----------|
+| Public Part and Private Part   | Checkout, order history and profile require sign-in, all other are public.   |
+| 3 dynamic pages   | 4 dynamic pages - Product Catalog, Product Details, Cart/Checkout, Order History   |
 | Item 1   | Item 2   |
 | Item 3   | Item 4   |
-
+| Item 1   | Item 2   |
+| Item 3   | Item 4   || Item 1   | Item 2   |
+| Item 3   | Item 4   |
 
 ## Issues
 
