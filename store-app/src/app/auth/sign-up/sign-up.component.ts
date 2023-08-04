@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { passwordMatchValidator } from '../validators/password-match-validator';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { emailValidator } from '../validators/email-validator';
 
 @Component({
   selector: 'app-sign-up',
@@ -13,7 +14,7 @@ export class SignUpComponent implements OnInit {
   isEmailTaken: boolean = false;
 
   form = this.formBuilder.group({
-    email: ['', [Validators.required, Validators.email]],
+    email: ['', [Validators.required, emailValidator()]],
     passGroup: this.formBuilder.group(
       {
         password: ['', [Validators.required, Validators.minLength(5)]],
