@@ -5,7 +5,6 @@
 
 #CuratedPurifiers is an online store that offers a curated range of indoor air purifiers to enhance the indoor air quality and provide a healthy living environment. The platform allows users to signuo and signin, providing a personalized shopping experience. Users can browse through the curated collection of purifiers, view detailed product information, add items to their cart, checkout, and see placed orders.
 
-
 ## Features
 
 - User Authentication: Registration and login functionality for personalized access to the store.
@@ -26,37 +25,18 @@
 3. Run `ng serve` for a dev server.
 4. Navigate to `http://localhost:4200/` in your browser.
 
-## SoftUni Requirements vs Implementation
+## Technologies Used
+- Angular 16
+- TypeScript
+- HTML/CSS
+- Firebase Realtime Database (with REST API)
+- Third-party librarires
 
-| Requirements | Implementation |
-|----------|----------|
-| Public Part and Private Part   | Checkout, order history and profile require sign-in, all other are public.   |
-| 3 dynamic pages   | 4 dynamic pages - Product Catalog, Product Details, Cart/Checkout, Order History   |
-| Item 1   | Item 2   |
-| Item 3   | Item 4   |
-| Item 1   | Item 2   |
-| Item 3   | Item 4   || Item 1   | Item 2   |
-| Item 3   | Item 4   |
+## Modules & Components 
 
-## Issues
-
-If you encounter any issues or have questions, please file an issue at [GitHub Issues](https://github.com/github_username/repo_name/issues).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-# angular-exam-project
-Angular Project
-
-# Main Requirements:
-* Backend service - Firebase;
-* At least 3 different dynamic pages (pages like about, contacts, login, register do not count towards that figure). If your project doesn’t cover this condition you will not be graded.
-* Use Angular for the client-side
-* Communicate to a remote service (via REST, sockets, GraphQL, or a similar client-server technique).
-* Apply error handling and data validation to avoid crashes when invalid data is entered
-* Brief documentation on the project and project architecture (as .md file)
-* Good usability. Good UI and UX. (NGBootstrap, MDL, CSS Grids or another method of your choice)
+### Auth Module
+- Component 1
+- Component 2
 
 # Bonus Requirements:
 * Deploy the application in a cloud environment
