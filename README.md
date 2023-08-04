@@ -32,8 +32,13 @@
 - Firebase Realtime Database (with REST API)
 - Third-party librarires
 
-## Modules & Components 
-Directory Structure
+## Code Structure
+
+Core Module
+|__ Header Component
+|__ Footer Component
+|__ PageNotFound Component
+
 app/
 The app directory contains the main components and features of the application.
 
