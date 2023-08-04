@@ -69,43 +69,22 @@ The `CoreModule` contains core components and services used throughout the appli
 
 The `FeatureModule` contains different features of the application.
 
-### About Feature
-
-
 #### Components
 
 - `AboutComponent`: Renders information about the application.
-
-### Cart Feature
-
-#### Components
-
 - `CartComponent`: Displays the items in the user's shopping cart.
-
-#### Services
-
-- `CartDataService`: Manages cart data and operations.
-
-### Catalog Feature
-
-#### Components
-
 - `CatalogComponent`: Displays the catalog of products available.
-
-### Details Feature
-
-#### Components
-
 - `DetailsComponent`: Displays details of a selected product.
-
-### Profile Feature
-
-#### Components
-
 - `ProfileComponent`: Displays user profile information.
 
-## Shared Module
+#### Services
+- `CartDataService`: Manages cart data and operations.
+- `OrderDataService`: Manages order data and operations.
 
+#### Directives
+- `OnMouseHoverDirective`: Adds functionality on mouse hover.
+
+## Shared Module
 The `SharedModule` contains shared components, directives, pipes, and services.
 
 #### Guards
@@ -121,10 +100,6 @@ The `SharedModule` contains shared components, directives, pipes, and services.
 
 - `LoaderComponent`: Displays a loading indicator during asynchronous operations.
 - `LoaderSmallComponent`: A smaller version of the loader component.
-
-#### Directives
-
-- `OnMouseHoverDirective`: Adds functionality on mouse hover.
 
 #### Pipes
 
