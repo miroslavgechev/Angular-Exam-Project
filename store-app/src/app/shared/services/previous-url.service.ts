@@ -5,7 +5,7 @@ import { NavigationEnd, Router } from '@angular/router';
   providedIn: 'root',
 })
 export class PreviousUrlService {
-  private previousUrl: string | undefined;
+  previousUrl: string = '/';
   private excludedUrls: string[] = ['/signin', '/signup'];
 
   constructor(private router: Router) {
@@ -20,7 +20,7 @@ export class PreviousUrlService {
     });
   }
 
-  getPreviousUrl(): string | undefined {
+  getPreviousUrl(): string {
     return this.previousUrl;
   }
 

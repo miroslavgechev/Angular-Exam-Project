@@ -28,7 +28,7 @@ export class ApiInterceptor implements HttpInterceptor {
     return next.handle(request).pipe(
       catchError((err) => {
         if (err.status === 401) {
-          this.router.navigate(['/login']);
+          this.router.navigate(['/signin']);
         }
 
         return [err];
