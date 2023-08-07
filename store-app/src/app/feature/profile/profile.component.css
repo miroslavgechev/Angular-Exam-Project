@@ -135,3 +135,18 @@ tbody tr td:first-child {
 .elapsed-time{
     font-style: italic;
 }
+
+/* Responsive*/
+@media (width < 850px){
+    div.list{
+        width: 90%;
+    }
+
+    .image-loader {
+        position: absolute;
+        left: 2%;
+        top: 0;
+        translate: transform(-50%, -50%);
+    }
+    
+}

@@ -127,3 +127,24 @@
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.8em;
 }
+
+/* Responsive*/
+@media (width < 850px){
+    .product-container{
+        flex-direction: column;
+    }
+    
+
+    .gallery::after {
+        content: '';
+        padding-top: 22em;
+
+    }
+
+    .image-loader {
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        translate: transform(-50%, -50%);
+    }
+}

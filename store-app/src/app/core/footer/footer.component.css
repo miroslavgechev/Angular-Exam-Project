@@ -28,3 +28,19 @@ footer a.profile-link {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Responsive*/
+@media (width < 850px){
+    footer{
+        gap: 2em;
+    }
+
+    footer > p {
+        flex-basis: 40%; 
+    }
+
+    footer .footer-nav a.profile-link{
+        text-align: center;
+    }
+    
+}

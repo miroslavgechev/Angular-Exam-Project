@@ -85,3 +85,33 @@ img.cover {
     color: rgb(0, 0, 0);
     transition: color 0.3s ease;
 }
+
+
+
+/* Responsive*/
+@media (width < 850px){
+    .card-container{
+        flex-direction: column;
+    }
+    
+    .product-info{
+        padding-top: 10em;
+    }
+
+    img.background {
+        height: 80%;
+    }
+
+    .image-loader {
+        top: 40%;
+    }
+    
+    .container{
+        padding: 2em 0 2em;
+    }
+
+    .heading {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

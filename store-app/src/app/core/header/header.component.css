@@ -50,7 +50,7 @@ header {
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 2em;
+    gap: 1em;
     text-decoration: none;
     cursor: pointer;
 }
@@ -58,4 +58,23 @@ header {
 .nav-menu a:hover,
 .nav-shopping-cart a:hover {
     color: rgba(0, 0, 0, 0.7)
+}
+
+
+/* Responsive*/
+@media (width < 850px){
+    .nav-main{
+        gap: 2em;
+        padding: 1em 1em;
+        margin: 0 1em;
+    }
+
+    div>a, div i{
+        text-align: center;
+    }
+
+    .nav-menu>ul{
+        gap: 0
+    }
+    
 }

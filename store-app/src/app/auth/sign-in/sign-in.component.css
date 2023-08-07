@@ -118,3 +118,11 @@ p.auth-success {
       opacity: 1;
     }
   }
+
+/* Responsive*/
+@media (width < 850px){
+    form.login, form.register{
+        width: 80%;
+    }
+    
+}
