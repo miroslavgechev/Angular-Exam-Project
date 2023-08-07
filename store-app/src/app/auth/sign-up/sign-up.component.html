@@ -54,6 +54,8 @@
         <button [disabled]="form.invalid" [ngClass]="{'invalid': form.invalid}">Create
             Profile</button>
 
+        <p *ngIf="loginSuccess" class="auth-success">welcome {{username}}...</p>
+
         <p class="text-center">
             Have a profile?
             <a routerLink="/signin">Sign In</a>

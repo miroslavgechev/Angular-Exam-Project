@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { User } from '../types/user';
 import { API_URL_EXT, USER_API_URL } from 'src/app/shared/constants';
 import { CartDataService } from '../feature/cart-data.service';
@@ -10,7 +10,10 @@ import { CartDataService } from '../feature/cart-data.service';
 export class AuthService {
   users: User[] = [];
 
-  constructor(private http: HttpClient, private cartDataService: CartDataService) {}
+  constructor(
+    private http: HttpClient,
+    private cartDataService: CartDataService
+  ) {}
 
   register(email: string, password: string): boolean {
     this.getAllUsers();
@@ -41,7 +44,7 @@ export class AuthService {
     return false;
   }
 
-  logout(): void{
+  logout(): void {
     this.removeUser();
   }
 
@@ -71,7 +74,7 @@ export class AuthService {
   }
 
   private removeUser(): void {
-    localStorage.removeItem('curatedUser')
+    localStorage.removeItem('curatedUser');
     this.cartDataService.clearCart();
   }
 

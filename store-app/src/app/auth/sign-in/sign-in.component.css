@@ -99,3 +99,22 @@ input.error {
     color: rgb(0, 0, 0);
     cursor: auto;
 }
+
+/* login successful */
+p.auth-success {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.5em !important;
+
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

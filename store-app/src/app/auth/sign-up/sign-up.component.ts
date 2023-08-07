@@ -4,6 +4,7 @@ import { passwordMatchValidator } from '../validators/password-match-validator';
 import { AuthService } from '../auth.service';
 import { emailValidator } from '../validators/email-validator';
 import { PreviousUrlService } from 'src/app/shared/services/previous-url.service';
+import { UtilityService } from 'src/app/shared/services/utility.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -12,6 +13,8 @@ import { PreviousUrlService } from 'src/app/shared/services/previous-url.service
 })
 export class SignUpComponent implements OnInit {
   isEmailTaken: boolean = false;
+  loginSuccess: boolean = false;
+  username: string | undefined = undefined;
 
   form = this.formBuilder.group({
     email: ['', [Validators.required, emailValidator()]],
@@ -27,7 +30,7 @@ export class SignUpComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private previousUrlService: PreviousUrlService
+    private previousUrlService: PreviousUrlService,
   ) {}
 
   ngOnInit(): void {
@@ -43,7 +46,13 @@ export class SignUpComponent implements OnInit {
     this.isEmailTaken = this.authService.register(email!, passGroup!.password!);
 
     if (!this.isEmailTaken) {
-      this.previousUrlService.navigateToPreviousUrl();
+      this.loginSuccess = true;
+      this.username = email?.substring(0, email.indexOf('@'));
+
+      setTimeout(() => {
+        this.previousUrlService.navigateToPreviousUrl();
+        this.loginSuccess = false;
+      }, 2000);
     }
   }
 }

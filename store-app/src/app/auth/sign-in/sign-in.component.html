@@ -33,6 +33,8 @@
 
         <button [disabled]="form.invalid" [ngClass]="{'invalid': form.invalid}">Sign In</button>
 
+        <p *ngIf="loginSuccess" class="auth-success">welcome {{username}}...</p>
+
         <p class="text-center">
             Don't have a profile?
             <a routerLink="/signup">Sign Up</a>

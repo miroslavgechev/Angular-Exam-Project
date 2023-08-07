@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
 import { PreviousUrlService } from 'src/app/shared/services/previous-url.service';
+import { UtilityService } from 'src/app/shared/services/utility.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -10,6 +11,8 @@ import { PreviousUrlService } from 'src/app/shared/services/previous-url.service
 })
 export class SignInComponent implements OnInit {
   areCredentialsCorrect: boolean = true;
+  loginSuccess: boolean = false;
+  username: string | null = null;
 
   form = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
@@ -23,7 +26,8 @@ export class SignInComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private previousUrlService: PreviousUrlService
+    private previousUrlService: PreviousUrlService,
+    private utilityService: UtilityService
   ) {}
 
   login(): void {
@@ -35,7 +39,13 @@ export class SignInComponent implements OnInit {
     this.areCredentialsCorrect = this.authService.login(email!, password!);
 
     if (this.areCredentialsCorrect) {
-      this.previousUrlService.navigateToPreviousUrl();
+      this.loginSuccess = true;
+      this.username = this.utilityService.getUserUsername();
+
+      setTimeout(() => {
+        this.previousUrlService.navigateToPreviousUrl();
+        this.loginSuccess = false;
+      }, 2000);
     }
   }
 }
