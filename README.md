@@ -12,7 +12,7 @@
 - Product Details: Detailed information and specifications and image for each purifier.
 - Shopping Cart: Users can add multiple items to their cart and review their selections before checkout.
 - Checkout Process: dummy checkout process, ready made for integration with a payment gateway.
-- Order History: Users can view a list of all their placed orders with order details and statuses.
+- Order History: Users can view a list of all their placed orders with order details.
 
 ## Screenshots
 
