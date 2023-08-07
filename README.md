@@ -27,6 +27,7 @@
 
 
 - Cart Page
+
 <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024" width="400" alt="Cart"> | <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024" height="200" alt="Cart-mobile-view">
 
 ## Installation
