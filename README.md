@@ -16,11 +16,17 @@
 
 ## Screenshots
 
-![Catalog](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024) ![Catalog-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024)
+- Catalog Page
+![Catalog](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024) 
+![Catalog-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024)
 
-![Product](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119076&authkey=%21AAPhGGAeTNPJaJk&width=1024) ![Product-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024)
+- Product Page
+![Product](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119076&authkey=%21AAPhGGAeTNPJaJk&width=1024) 
+![Product-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024)
 
-![Cart](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024) ![Cart-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024)
+- Cart Page
+![Cart](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024) 
+![Cart-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024)
 
 (Screenshots - to add)
 
