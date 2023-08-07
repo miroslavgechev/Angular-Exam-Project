@@ -17,16 +17,16 @@
 ## Screenshots
 
 - Catalog Page
-![Catalog](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024) {: width="400px"}
-![Catalog-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024) {: width="400px"}
+![Catalog](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024){: width="400px"}
+![Catalog-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024){: width="400px"}
 
 - Product Page
-![Product](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119076&authkey=%21AAPhGGAeTNPJaJk&width=1024) {: width="400px"}
-![Product-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024) {: width="400px"}
+![Product](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119076&authkey=%21AAPhGGAeTNPJaJk&width=1024){: width="400px"}
+![Product-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024){: width="400px"}
 
 - Cart Page
-![Cart](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024) {: width="400px"}
-![Cart-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024) {: width="400px"}
+![Cart](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024){: width="400px"}
+![Cart-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024){: width="400px"}
 
 ## Installation
 
