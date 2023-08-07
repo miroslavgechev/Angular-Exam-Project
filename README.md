@@ -25,10 +25,12 @@
 3. Run `ng serve` for a dev server.
 4. Navigate to `http://localhost:4200/` in your browser.
 
+5. You can access a running version of the app on this link: https://purifiers.netlify.app
+
 ## Technologies Used
 - Angular 16
 - TypeScript
-- HTML/CSS
+- HTML/CSS/Responsive Design
 - Firebase Realtime Database (with REST API)
 - Third-party libraries
 
