@@ -18,17 +18,17 @@
 
 - Catalog Page
 <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024" width="400" alt="Catalog">
-<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024" width="400" alt="Catalog-mobile-view">
+<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024" height="200" alt="Catalog-mobile-view">
 
 
 - Product Page
 <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119076&authkey=%21AAPhGGAeTNPJaJk&width=1024" width="400" alt="Product">
-<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024" width="400" alt="Product-mobile-view">
+<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024" height="200" alt="Product-mobile-view">
 
 
 - Cart Page
 <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024" width="400" alt="Cart">
-<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024" width="400" alt="Cart-mobile-view">
+<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024" height="200" alt="Cart-mobile-view">
 
 ## Installation
 
