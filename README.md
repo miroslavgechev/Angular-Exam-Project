@@ -17,7 +17,7 @@
 ## Screenshots
 
 - Catalog Page
-![Catalog](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024){: width="400px"}
+<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024" width="400" alt="Screenshot">
 ![Catalog-mobile-view](https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024){: width="400px"}
 
 - Product Page
