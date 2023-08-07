@@ -17,8 +17,7 @@
 ## Screenshots
 
 - Catalog Page
-<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024" width="400" alt="Catalog">
-<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024" height="200" alt="Catalog-mobile-view">
+<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024" width="400" alt="Catalog"> <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024" height="200" alt="Catalog-mobile-view">
 
 
 - Product Page
