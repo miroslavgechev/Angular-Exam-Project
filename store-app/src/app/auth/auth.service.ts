@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from '../types/user';
-import { API_URL_EXT, USER_API_URL } from 'src/app/shared/constants';
+import { USER_URL } from 'src/app/shared/constants';
 import { CartDataService } from '../feature/cart-data.service';
 
 @Injectable({
@@ -24,7 +24,7 @@ export class AuthService {
 
     const user = this.formUserInJSON(email, password);
 
-    this.http.post(`${USER_API_URL}${API_URL_EXT}`, user).subscribe({
+    this.http.post(`${USER_URL}`, user).subscribe({
       next: () => {
         this.setUser(user);
       },
@@ -49,7 +49,7 @@ export class AuthService {
   }
 
   getAllUsers() {
-    return this.http.get(`${USER_API_URL}${API_URL_EXT}`).subscribe((users) => {
+    return this.http.get(`${USER_URL}`).subscribe((users) => {
       this.users = users as User[];
     });
   }

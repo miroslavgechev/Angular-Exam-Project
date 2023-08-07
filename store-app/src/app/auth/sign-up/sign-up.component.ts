@@ -52,7 +52,7 @@ export class SignUpComponent implements OnInit {
       setTimeout(() => {
         this.previousUrlService.navigateToPreviousUrl();
         this.loginSuccess = false;
-      }, 2000);
+      }, 1000);
     }
   }
 }

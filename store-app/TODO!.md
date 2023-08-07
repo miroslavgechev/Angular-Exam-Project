@@ -1,9 +1,7 @@
 - Documentation - add screenshots
 
 Good to haves:
-- use interceptor fully & add error handling
-
-- update user order - to show status, default status is pending/delivered
+- add error handling
 
 - add lazy loading - all except catalog. Maybe move catalog to core.
 

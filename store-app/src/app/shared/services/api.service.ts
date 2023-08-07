@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { API_URL_EXT, CATALOG_API_URL, ORDERS_API_URL } from 'src/app/shared/constants';
+import { API_URL_EXT, CATALOG_API_URL, CATALOG_URL, ORDERS_URL } from 'src/app/shared/constants';
 import { Card } from 'src/app/types/card';
 import { DetailedCard } from 'src/app/types/cardDetailed';
 import { Order } from 'src/app/types/order';
@@ -12,7 +12,7 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getCatalog() {
-    return this.http.get<Card[]>(`/api/purifiers${API_URL_EXT}`);
+    return this.http.get<Card[]>(`${CATALOG_URL}`);
   }
 
   getItemDetails(id: number) {
@@ -22,10 +22,10 @@ export class ApiService {
   }
 
   postOrder(order: Order) {
-    return this.http.post<Order>(`${ORDERS_API_URL}${API_URL_EXT}`, order);
+    return this.http.post<Order>(`${ORDERS_URL}`, order);
   }
 
   getOrders() {
-    return this.http.get<Order[]>(`${ORDERS_API_URL}${API_URL_EXT}`);
+    return this.http.get<Order[]>(`${ORDERS_URL}`);
   }
 }
