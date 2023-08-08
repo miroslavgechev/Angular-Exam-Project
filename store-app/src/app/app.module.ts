@@ -19,7 +19,7 @@ import { PreviousUrlService } from './shared/services/previous-url.service';
     CoreModule,
     FeatureModule,
     AuthModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [
     appInterceptorProvider,
@@ -27,7 +27,7 @@ import { PreviousUrlService } from './shared/services/previous-url.service';
       provide: ErrorHandler,
       useClass: GlobalErrorHandlerService,
     },
-    PreviousUrlService
+    PreviousUrlService,
   ],
   bootstrap: [AppComponent],
 })
