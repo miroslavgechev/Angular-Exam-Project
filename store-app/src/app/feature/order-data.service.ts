@@ -29,7 +29,6 @@ export class OrderDataService {
 
     return this.apiService.getOrders().pipe(
       map((orders) => {
-        console.log(orders);
         return Object.values(orders).filter((order) => order.userId === id);
       }),
       catchError((err) => {

@@ -5,11 +5,14 @@ import { NavigationEnd, Router } from '@angular/router';
   providedIn: 'root',
 })
 export class PreviousUrlService {
+
   previousUrl: string = '/';
   private excludedUrls: string[] = ['/signin', '/signup'];
 
   constructor(private router: Router) {
+
     this.router.events.subscribe((event) => {
+
       if (event instanceof NavigationEnd) {
         const currentUrl = event.urlAfterRedirects;
 
@@ -27,4 +30,5 @@ export class PreviousUrlService {
   navigateToPreviousUrl(): void {
     this.router.navigate([this.getPreviousUrl()]);
   }
+
 }
