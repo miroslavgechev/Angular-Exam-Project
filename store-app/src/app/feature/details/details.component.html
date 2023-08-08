@@ -3,7 +3,7 @@
     <div class="product-container">
 
         <div class="gallery">
-            <button (click)="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="arrow-btn" (click)="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>
 
             <div class="image-loader" *ngIf="!imageLoaded[activeIndex]">
                 <app-loader></app-loader>
@@ -12,7 +12,7 @@
             <img *ngFor="let img of item?.imageDetailsUrl; let i = index" [ngClass]="{'active': i === activeIndex}"
                 [src]="img" (load)="onImageLoad(i)" alt="Product Image">
 
-            <button (click)="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="arrow-btn" (click)="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
 
         <div class="product-information">

@@ -34,6 +34,10 @@
     right: 1%;
 }
 
+button.arrow-btn{
+    border: none;
+}
+
 .image-loader {
     position: absolute;
     left: 47.5%;
@@ -127,6 +131,8 @@
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.8em;
 }
+
+
 
 /* Responsive*/
 @media (width < 850px){
