@@ -1,4 +1,5 @@
 # Project Name
+
 #CuratedPurifiers Store
 
 ## Description
@@ -18,18 +19,15 @@
 
 - Catalog Page
 
-<img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119074&authkey=%21ADrQBwrmeuvoqxU&width=1024" width="500" alt="Catalog"> | <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119075&authkey=%21ALKR45Pn4G_4Lsw&height=1024" height="280" alt="Catalog-mobile-view">
-
+<img src="./screenshots/catalog.png" width="500" alt="Catalog"> | <img src="./screenshots/catalog-mobile-view.png" height="280" alt="Catalog-mobile-view">
 
 - Product Page
 
 <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119076&authkey=%21AAPhGGAeTNPJaJk&width=1024" width="500" alt="Product"> | <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119077&authkey=%21ANjuZTggHtzuvCs&height=1024" height="280" alt="Product-mobile-view">
 
-
 - Cart Page
 
 <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119073&authkey=%21ABgUoanjrR0x7pg&width=1024" width="500" alt="Cart"> | <img src="https://onedrive.live.com/embed?resid=A5258F9BF65585D3%2119072&authkey=%21AEwTao_WP6JWdpg&height=1024" height="280" alt="Cart-mobile-view">
-
 
 ## Installation
 
@@ -41,6 +39,7 @@
 5. You can access a running version of the app on this link: https://purifiers.netlify.app
 
 ## Technologies Used
+
 - Angular 16
 - TypeScript
 - HTML/CSS/Responsive Design
@@ -91,13 +90,16 @@ The `FeatureModule` contains different features of the application.
 - `ProfileComponent`: Displays user profile information.
 
 #### Services
+
 - `CartDataService`: Manages cart data and operations.
 - `OrderDataService`: Manages order data and operations.
 
 #### Directives
+
 - `OnMouseHoverDirective`: Adds functionality on mouse hover.
 
 ## Shared Module
+
 The `SharedModule` contains shared components, directives, pipes, and services.
 
 #### Guards
@@ -128,6 +130,7 @@ The `SharedModule` contains shared components, directives, pipes, and services.
 - `UtilityService`: Contains utility methods.
 
 #### Constants
+
 - `Constants`: Contains application constants.
 
 ## Types
@@ -141,5 +144,3 @@ The `Assets` folder holds static assets like images, fonts, etc.
 ## CSS
 
 The `CSS` folder contains global CSS files for styling the application.
-
-
